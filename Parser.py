@@ -2,12 +2,12 @@ import xml.etree.ElementTree as ET
 import sys
 import re
 
-if((sys.argv.__len__()) != 2):
-    print("Uso: nomeScript nomeFile/pathFile")
+if((sys.argv.__len__()) != 3):
+    print("Uso: nomeScript nomeFile/pathFile nomeFileXmi")
 else:
     tree = ET.parse(sys.argv[1])
     root = tree.getroot()
-
+    d = 0;
     #struttura della prima sezione del nuovo file
     newRoot = ET.Element('uml:Model')
     newRoot.attrib['xmi:version'] = '2.1'
@@ -15,17 +15,19 @@ else:
     newRoot.attrib['xmlns:xsi'] = 'http://www.w3.org/2001/XMLSchema-instance'
     newRoot.attrib['xmlns:uml'] = 'http://schema.omg.org/spec/UML/2.1.1'
     newRoot.attrib['xsi:schemaLocation'] = 'http://schema.omg.org/spec/UML/2.1.1 http://www.eclipse.org/uml2/2.0.0/UML'
-    newRoot.attrib['xmi:id'] = '_XrSbENk5EdyEZoPpUv3LUw'
+    newRoot.attrib['xmi:id'] = '_XrSbENk5EdyEZoPpUv3LUw'+str(d)
     newRoot.attrib['name'] = 'Blank Model'
     packageImport = ET.SubElement(newRoot, 'packageImport')
     packageImport.attrib['xmi:type'] = 'uml:PackageImport'
-    packageImport.attrib['xmi:id'] = '_XrSbEdk5EdyEZoPpUv3LUw'
+    packageImport.attrib['xmi:id'] = '_XrSbEdk5EdyEZoPpUv3LUw'+str(d)
     importedPackage = ET.SubElement(packageImport, 'importedPackage')
     importedPackage.attrib['xmi:type'] = 'uml:Model'
     importedPackage.attrib['href'] = 'http://schema.omg.org/spec/UML/2.1.1/uml.xml#_0'
 
     #ottengo tutte le entità dall'xml e creo gli elementi per il nuovo file
+
     for c in root.findall("./Schemas/SourceSchema/Relation"):
+       d += 1
        nameEn = c.get('name')
        en = ET.SubElement(newRoot, "packagedElement") #elemento per la definizione delle entita
        en.attrib['xmi:id'] = nameEn
@@ -36,13 +38,14 @@ else:
        #estezione per la definizione di una entità
        ext = ET.SubElement(en, 'xmi:Extension')
        ann = ET.SubElement(ext, 'eAnnotations')
-       ann.attrib['xmi:id'] = 'activityEAnnotation'  #controllare che vada bene che si mantenga sempre questo id
+       ann.attrib['xmi:id'] = 'activityEAnnotation'+str(d)  #controllare che vada bene che si mantenga sempre questo id
        ann.attrib['source'] = 'http://www.eclipse.org/uml2/2.0.0/UML'
        det = ET.SubElement(ann, 'details')
-       det.attrib['xmi:id'] = 'phpbb_f_Entity'
+       det.attrib['xmi:id'] = 'phpbb_f_Entity'+str(d)
        det.attrib['key'] = 'Entity'
 
-       #ottengo il nome della PK
+
+    #ottengo il nome della PK
        namePk = root.find("./Schemas/SourceSchema/*[@name='"+nameEn+"']/PrimaryKey/Attr").text
 
        #per ogni entità crea gli attibuti relativi
@@ -76,7 +79,7 @@ else:
         if(nomeEnt1 != '' and nomeEnt2 !=''):
             rel = ET.SubElement(newRoot, 'packagedElement')
             rel.attrib['xmi:type'] = 'uml:Association'
-            rel.attrib['xmi:id'] = re.sub('copy._.', '', nomeEnt1)+"__"+re.sub('copy._.', '', nomeEnt2)+"__id"              #elimino la parte 'copyxxx' dal nome ottenuto
+            rel.attrib['xmi:id'] = re.sub('copy.*_.*', '', nomeEnt1)+"__"+re.sub('copy.*_.*', '', nomeEnt2)+"__id"              #elimino la parte 'copyxxx' dal nome ottenuto
     #elif(listS.__len__() != 0):
     for fk in listS:
         nomeEnt1 = fk.find("From").get("tableref")
@@ -90,11 +93,11 @@ else:
     # struttura della sezione finale del nuovo file
     profileApplication = ET.SubElement(newRoot, 'profileApplication')
     profileApplication.attrib['xmi:type'] = 'uml:ProfileApplication'
-    profileApplication.attrib['xmi:id'] = '_XrSbHdk5EdyEZoPpUv3LUw'
+    profileApplication.attrib['xmi:id'] = '_XrSbHdk5EdyEZoPpUv3LUw' + str(d)
     extension2 = ET.SubElement(profileApplication, 'xmi:Extension')
     ann2 = ET.SubElement(extension2, 'eAnnotations')
     ann2.attrib['xmi:type'] = 'ecore:EAnnotation'
-    ann2.attrib['xmi:id'] = '_XrSbHtk5EdyEZoPpUv3LUw'
+    ann2.attrib['xmi:id'] = '_XrSbHtk5EdyEZoPpUv3LUw' + str(d)
     ann2.attrib['source'] = 'http://www.eclipse.org/uml2/2.0.0/UML'
     references = ET.SubElement(ann2, 'references')
     references.attrib['xmi:type'] = 'ecore:EPackage'  # da provare a togliere
@@ -103,6 +106,6 @@ else:
     appliedProfile.attrib['xmi:type'] = 'uml:Profile'
     appliedProfile.attrib['href'] = 'http://schema.omg.org/spec/UML/2.1.1/StandardProfileL2.xmi#_0'
 
-    #scrivo l'albero creato sul nuovo file
+    # scrivo l'albero creato sul nuovo file
     newTree = ET.ElementTree(newRoot)
-    newTree.write('conversioneXmi.xmi')
+    newTree.write(sys.argv[2] + '.xmi')
