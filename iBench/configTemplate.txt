@@ -11,23 +11,23 @@
 ################################################################################
 
 # relative path for storing metadata related files 
-SchemaPathPrefix=t2			
+SchemaPathPrefix=test			
 
 # relative path for storing data files 
-InstancePathPrefix=t2
+InstancePathPrefix=test
 
 # Source and target schema xml file name
-FileNames.SourceSchema = sourceSchemaYO.xml
-FileNames.TargetSchema = targetSchemaYO.xml
+#FileNames.SourceSchema = sourceSchemaYO.xml
+#FileNames.TargetSchema = targetSchemaYO.xml
 
 # Name for the data generators configuration file
-FileNames.SourceInstance=dataGenYO.tsl
+#FileNames.SourceInstance=dataGenYO.tsl
 
 # Name for the XML file storing source instance data 
-FileNames.SourceDocumentName=sourceInstYO
+#FileNames.SourceDocumentName=sourceInstYO
 
 # Name of the metadata XML file storing schemas, constraints, and mappings
-FileNames.Schemas=metadataYO.xml
+FileNames.Schemas=metadata.xml
 
 ################################################################################
 # Number of instances for each primitive type. A primitive is a mapping template
@@ -182,10 +182,10 @@ ConfigOptions.TargetCircularFK = 0
 #ConfigOptionsDeviation.SkolemKind = 0
 #ConfigOptionsDeviation.SourceSkolemPerc = 0
 #ConfigOptionsDeviation.SourceFDPerc = 0
-ConfigOptionsDeviation.SourceInclusionDependencyPerc = 0
-ConfigOptionsDeviation.SourceInclusionDependencyFKPerc = 0
-ConfigOptionsDeviation.TargetInclusionDependencyPerc = 0
-ConfigOptionsDeviation.TargetInclusionDependencyFKPerc = 0
+#ConfigOptionsDeviation.SourceInclusionDependencyPerc = 0
+#ConfigOptionsDeviation.SourceInclusionDependencyFKPerc = 0
+#ConfigOptionsDeviation.TargetInclusionDependencyPerc = 0
+#ConfigOptionsDeviation.TargetInclusionDependencyFKPerc = 0
 #ConfigOptionsDeviation.SourceCircularInclusionDependency = 0
 #ConfigOptionsDeviation.SourceCircularFK = 0
 #ConfigOptionsDeviation.TargetCircularInclusionDependency = 0
@@ -329,13 +329,13 @@ QueryGenerator = Postgres
 OutputOption.HTMLSchemas = false
 
 # Generate source data
-OutputOption.Data = true
+OutputOption.Data = false
 
 # Generate target data that is independent of the source data
 OutputOption.EnableTargetData = false
 
 # Generate XMLSchema schemas for the source and target schemas
-OutputOption.XMLSchemas = true
+OutputOption.XMLSchemas = false
 
 # Generate an HTML description of the source to target mappings
 OutputOption.HTMLMapping = false
@@ -344,7 +344,7 @@ OutputOption.HTMLMapping = false
 OutputOption.TrampXML = true			
 
 # Generate a Clio conformant mapping file
-OutputOption.Clio = true				
+OutputOption.Clio = false				
 
 ################################################################################
 # Optional activation/deactivation of parts of the generated Tramp XML document
@@ -354,10 +354,10 @@ OutputOption.Clio = true
 TrampXMLOutput.Correspondences = true
 
 # Generate transformations implementing the mappings (currently only SQL)
-TrampXMLOutput.Transformations = true
+TrampXMLOutput.Transformations = false
 
 # Generate data
-TrampXMLOutput.Data = true
+TrampXMLOutput.Data = false
 
 # Generate a connection info (allows Tramp tools to connect to a database, e.g., to load a schema)
 TrampXMLOutput.ConnectionInfo = false
