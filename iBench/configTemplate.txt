@@ -11,10 +11,10 @@
 ################################################################################
 
 # relative path for storing metadata related files 
-SchemaPathPrefix=testBig			
+#SchemaPathPrefix=test		
 
 # relative path for storing data files 
-InstancePathPrefix=testBig
+#InstancePathPrefix=test
 
 # Source and target schema xml file name
 #FileNames.SourceSchema = sourceSchemaYO.xml
@@ -36,7 +36,7 @@ FileNames.Schemas=metadata.xml
 ################################################################################
 
 # Copies a source relation to the target
-Scenarios.COPY = 1000
+Scenarios.COPY = 2
 
 # Horizontally partition a source relation into multiple target relations
 Scenarios.HORIZPARTITION = 0
@@ -139,10 +139,10 @@ ConfigOptions.JoinKind = 0
 ########################################
 # Generate random inclusion dependencies
 #sul tot delle entita quante relzioni ci devono essere #sulla parcentuale delle relazioni definite su qunate devono essere fk
-ConfigOptions.SourceInclusionDependencyPerc = 50 
+ConfigOptions.SourceInclusionDependencyPerc = 100 
 ConfigOptions.SourceInclusionDependencyFKPerc = 50	
 ConfigOptions.TargetInclusionDependencyPerc = 100		
-ConfigOptions.TargetInclusionDependencyFKPerc = 70
+ConfigOptions.TargetInclusionDependencyFKPerc = 50
 # exists is 1 and not exists is 0
 ConfigOptions.SourceCircularInclusionDependency = 0	
 ConfigOptions.SourceCircularFK = 0			   		
@@ -329,7 +329,7 @@ QueryGenerator = Postgres
 OutputOption.HTMLSchemas = false
 
 # Generate source data
-OutputOption.Data = false
+OutputOption.Data = true
 
 # Generate target data that is independent of the source data
 OutputOption.EnableTargetData = false

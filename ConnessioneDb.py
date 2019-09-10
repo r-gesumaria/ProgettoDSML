@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 import mysql.connector
 import sys
+import csv
 
 def creaConnessione(nomeDB):
     return mysql.connector.connect(
@@ -14,7 +15,7 @@ def creaDb(tipoSchema):
     #connessione a mysql e creazione db
     mydb = creaConnessione("")
     mycursor = mydb.cursor()
-    nomeDb = tipoSchema + sys.argv[2]
+    nomeDb = tipoSchema + "_" + sys.argv[2]
     mycursor.execute("CREATE DATABASE " + nomeDb)
     mydb.close
 
@@ -24,7 +25,7 @@ def creaDb(tipoSchema):
 
     #connessione al db appena creato e generazione delle tabelle con attributi
     mydb = creaConnessione(nomeDb)
-
+    mycursor = mydb.cursor()
     for c in root.findall("./Schemas/" + tipoSchema + "/Relation"):
         nameEn = c.get('name')
         table = 'CREATE TABLE ' + nameEn + ' ('
@@ -39,12 +40,38 @@ def creaDb(tipoSchema):
         table += ')'
         mycursor.execute(table)
 
-    print(table)
+        #Manca la parte per il target
+        if(tipoSchema == 'SourceSchema'):
+            caricaDati(mycursor, nameEn)
+            mydb.commit()
+
+    #print(table)
+
+def caricaDati(cursor, nomeEntita):
+    '''TODO caricare dati
+        Esiste un csv per ogni entità
+        Controllare se per il target esiste un csv
+        Valutare se creare una cartella a parte stesso da ibench
+    '''
+    queryRiga = ""
+    with open(nomeEntita + ".csv", 'r') as csvfile:
+        csv_data = csv.reader(csvfile)
+        for row in csv_data:
+            queryRiga = 'INSERT INTO ' + nomeEntita + ' VALUES('
+            # I valori sono separati da una pipe
+            vals = row[0].split("|")
+            for v in range(len(vals)):
+                # Il primo è il numero della riga di excel
+                if(v==0):continue
+                # Concateno il valore della cella
+                queryRiga += "'" + vals[v] + "',"
+            # Tolgo l'ultima virgola
+            queryRiga = queryRiga[:-1]
+            queryRiga += ")"
+            cursor.execute(queryRiga)
 
 if((sys.argv.__len__()) != 3):
     print("Uso: nomeScript nomeFile/pathFile nomeDb")
 else:
     creaDb("SourceSchema")
     creaDb("TargetSchema")
-
-
