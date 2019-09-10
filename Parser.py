@@ -7,7 +7,7 @@ if((sys.argv.__len__()) != 3):
 else:
     tree = ET.parse(sys.argv[1])
     root = tree.getroot()
-    d = 0;
+
     #struttura della prima sezione del nuovo file
     newRoot = ET.Element('uml:Model')
     newRoot.attrib['xmi:version'] = '2.1'
@@ -15,11 +15,11 @@ else:
     newRoot.attrib['xmlns:xsi'] = 'http://www.w3.org/2001/XMLSchema-instance'
     newRoot.attrib['xmlns:uml'] = 'http://schema.omg.org/spec/UML/2.1.1'
     newRoot.attrib['xsi:schemaLocation'] = 'http://schema.omg.org/spec/UML/2.1.1 http://www.eclipse.org/uml2/2.0.0/UML'
-    newRoot.attrib['xmi:id'] = '_XrSbENk5EdyEZoPpUv3LUw'+str(d)
+    newRoot.attrib['xmi:id'] = '_XrSbENk5EdyEZoPpUv3LUw'
     newRoot.attrib['name'] = 'Blank Model'
     packageImport = ET.SubElement(newRoot, 'packageImport')
     packageImport.attrib['xmi:type'] = 'uml:PackageImport'
-    packageImport.attrib['xmi:id'] = '_XrSbEdk5EdyEZoPpUv3LUw'+str(d)
+    packageImport.attrib['xmi:id'] = '_XrSbEdk5EdyEZoPpUv3LUw'
     importedPackage = ET.SubElement(packageImport, 'importedPackage')
     importedPackage.attrib['xmi:type'] = 'uml:Model'
     importedPackage.attrib['href'] = 'http://schema.omg.org/spec/UML/2.1.1/uml.xml#_0'
@@ -27,7 +27,7 @@ else:
     #ottengo tutte le entità dall'xml e creo gli elementi per il nuovo file
 
     for c in root.findall("./Schemas/SourceSchema/Relation"):
-       d += 1
+
        nameEn = c.get('name')
        en = ET.SubElement(newRoot, "packagedElement") #elemento per la definizione delle entita
        en.attrib['xmi:id'] = nameEn
@@ -38,10 +38,10 @@ else:
        #estezione per la definizione di una entità
        ext = ET.SubElement(en, 'xmi:Extension')
        ann = ET.SubElement(ext, 'eAnnotations')
-       ann.attrib['xmi:id'] = 'activityEAnnotation'+str(d)  #controllare che vada bene che si mantenga sempre questo id
+       ann.attrib['xmi:id'] = 'activityEAnnotation'  #controllare che vada bene che si mantenga sempre questo id
        ann.attrib['source'] = 'http://www.eclipse.org/uml2/2.0.0/UML'
        det = ET.SubElement(ann, 'details')
-       det.attrib['xmi:id'] = 'phpbb_f_Entity'+str(d)
+       det.attrib['xmi:id'] = 'phpbb_f_Entity'
        det.attrib['key'] = 'Entity'
 
 
@@ -93,11 +93,11 @@ else:
     # struttura della sezione finale del nuovo file
     profileApplication = ET.SubElement(newRoot, 'profileApplication')
     profileApplication.attrib['xmi:type'] = 'uml:ProfileApplication'
-    profileApplication.attrib['xmi:id'] = '_XrSbHdk5EdyEZoPpUv3LUw' + str(d)
+    profileApplication.attrib['xmi:id'] = '_XrSbHdk5EdyEZoPpUv3LUw'
     extension2 = ET.SubElement(profileApplication, 'xmi:Extension')
     ann2 = ET.SubElement(extension2, 'eAnnotations')
     ann2.attrib['xmi:type'] = 'ecore:EAnnotation'
-    ann2.attrib['xmi:id'] = '_XrSbHtk5EdyEZoPpUv3LUw' + str(d)
+    ann2.attrib['xmi:id'] = '_XrSbHtk5EdyEZoPpUv3LUw'
     ann2.attrib['source'] = 'http://www.eclipse.org/uml2/2.0.0/UML'
     references = ET.SubElement(ann2, 'references')
     references.attrib['xmi:type'] = 'ecore:EPackage'  # da provare a togliere
