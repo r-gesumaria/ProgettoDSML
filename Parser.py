@@ -2,13 +2,11 @@ import xml.etree.ElementTree as ET
 import sys
 import re
 
-if((sys.argv.__len__()) != 3):
-    print("Uso: nomeScript nomeFile/pathFile nomeFileXmi")
-else:
+def creaSchema(tipoSchema):
     tree = ET.parse(sys.argv[1])
     root = tree.getroot()
 
-    #struttura della prima sezione del nuovo file
+    # struttura della prima sezione del nuovo file
     newRoot = ET.Element('uml:Model')
     newRoot.attrib['xmi:version'] = '2.1'
     newRoot.attrib['xmlns:xmi'] = 'http://schema.omg.org/spec/XMI/2.1'
@@ -24,71 +22,58 @@ else:
     importedPackage.attrib['xmi:type'] = 'uml:Model'
     importedPackage.attrib['href'] = 'http://schema.omg.org/spec/UML/2.1.1/uml.xml#_0'
 
-    #ottengo tutte le entità dall'xml e creo gli elementi per il nuovo file
+    # ottengo tutte le entità dall'xml e creo gli elementi per il nuovo file
+    for c in root.findall("./Schemas/" + tipoSchema + "/Relation"):
 
-    for c in root.findall("./Schemas/SourceSchema/Relation"):
+        nameEn = c.get('name')
+        en = ET.SubElement(newRoot, "packagedElement")  # elemento per la definizione delle entita
+        en.attrib['xmi:id'] = nameEn
+        en.attrib['name'] = nameEn
+        en.attrib['xmi:type'] = 'uml:Class'
+        en.attrib['visibility'] = 'private'
 
-       nameEn = c.get('name')
-       en = ET.SubElement(newRoot, "packagedElement") #elemento per la definizione delle entita
-       en.attrib['xmi:id'] = nameEn
-       en.attrib['name'] = nameEn
-       en.attrib['xmi:type'] = 'uml:Class'
-       en.attrib['visibility'] = 'private'
+        # estezione per la definizione di una entità
+        ext = ET.SubElement(en, 'xmi:Extension')
+        ann = ET.SubElement(ext, 'eAnnotations')
+        ann.attrib['xmi:id'] = 'activityEAnnotation'  # controllare che vada bene che si mantenga sempre questo id
+        ann.attrib['source'] = 'http://www.eclipse.org/uml2/2.0.0/UML'
+        det = ET.SubElement(ann, 'details')
+        det.attrib['xmi:id'] = 'phpbb_f_Entity'
+        det.attrib['key'] = 'Entity'
 
-       #estezione per la definizione di una entità
-       ext = ET.SubElement(en, 'xmi:Extension')
-       ann = ET.SubElement(ext, 'eAnnotations')
-       ann.attrib['xmi:id'] = 'activityEAnnotation'  #controllare che vada bene che si mantenga sempre questo id
-       ann.attrib['source'] = 'http://www.eclipse.org/uml2/2.0.0/UML'
-       det = ET.SubElement(ann, 'details')
-       det.attrib['xmi:id'] = 'phpbb_f_Entity'
-       det.attrib['key'] = 'Entity'
+        # ottengo il nome della PK
+        namePk = root.find("./Schemas/"+tipoSchema+"/*[@name='" + nameEn + "']/PrimaryKey/Attr").text
 
+        # per ogni entità crea gli attibuti relativi
+        for a in root.findall("./Schemas/"+tipoSchema+"/*[@name='" + nameEn + "']/Attr"):
 
-    #ottengo il nome della PK
-       namePk = root.find("./Schemas/SourceSchema/*[@name='"+nameEn+"']/PrimaryKey/Attr").text
+            attr = ET.SubElement(en, "ownedAttribute")
 
-       #per ogni entità crea gli attibuti relativi
-       for a in root.findall("./Schemas/SourceSchema/*[@name='"+nameEn+"']/Attr"):
+            # creo la sezione per identificare la PK
+            if (a.find('Name').text == namePk):
+                extPK = ET.SubElement(attr, 'xmi:Extension')
+                annPK = ET.SubElement(extPK, 'eAnnotations')
+                annPK.attrib['xmi:id'] = '_Ovi-VuPdEdy8F_b8rGg0Zw'
+                annPK.attrib['source'] = 'http://www.eclipse.org/uml2/2.0.0/UML'
+                detPK = ET.SubElement(annPK, 'details')
+                detPK.attrib['xmi:id'] = '_Ovi-V-PdEdy8F_b8rGg0Zw'
+                detPK.attrib['key'] = 'PK'
 
-           attr = ET.SubElement(en, "ownedAttribute")
+            attr.attrib['xmi:type'] = 'uml:Property'
+            attr.attrib['xmi:id'] = a.find('Name').text
+            attr.attrib['name'] = a.find('Name').text
+            attr.attrib['visibility'] = 'private'
 
-           #creo la sezione per identificare la PK
-           if (a.find('Name').text == namePk):
-               extPK = ET.SubElement(attr, 'xmi:Extension')
-               annPK = ET.SubElement(extPK, 'eAnnotations')
-               annPK.attrib['xmi:id'] = '_Ovi-VuPdEdy8F_b8rGg0Zw'
-               annPK.attrib['source'] = 'http://www.eclipse.org/uml2/2.0.0/UML'
-               detPK = ET.SubElement(annPK, 'details')
-               detPK.attrib['xmi:id'] = '_Ovi-V-PdEdy8F_b8rGg0Zw'
-               detPK.attrib['key'] = 'PK'
-
-           attr.attrib['xmi:type'] = 'uml:Property'
-           attr.attrib['xmi:id'] = a.find('Name').text
-           attr.attrib['name'] = a.find('Name').text
-           attr.attrib['visibility'] = 'private'
-
-    #generiamo la sezione per le relazioni tra le entità
-    listT = root.findall("./Schemas/TargetSchema/ForeignKey")
-    listS = root.findall("./Schemas/SourceSchema/ForeignKey")
-    #if(listT.__len__() != 0):
-    for fk in listT:
-        nomeEnt1 = fk.find("From").get("tableref")
-        nomeEnt2 = fk.find("To").get("tableref")
-
-        if(nomeEnt1 != '' and nomeEnt2 !=''):
-            rel = ET.SubElement(newRoot, 'packagedElement')
-            rel.attrib['xmi:type'] = 'uml:Association'
-            rel.attrib['xmi:id'] = re.sub('copy.*_.*', '', nomeEnt1)+"__"+re.sub('copy.*_.*', '', nomeEnt2)+"__id"              #elimino la parte 'copyxxx' dal nome ottenuto
-    #elif(listS.__len__() != 0):
-    for fk in listS:
+    # generiamo la sezione per le relazioni tra le entità
+    list = root.findall("./Schemas/"+tipoSchema+"/ForeignKey")
+    for fk in list:
         nomeEnt1 = fk.find("From").get("tableref")
         nomeEnt2 = fk.find("To").get("tableref")
 
         if (nomeEnt1 != '' and nomeEnt2 != ''):
             rel = ET.SubElement(newRoot, 'packagedElement')
             rel.attrib['xmi:type'] = 'uml:Association'
-            rel.attrib['xmi:id'] = nomeEnt1+"__"+nomeEnt2+"__id"
+            rel.attrib['xmi:id'] = nomeEnt1 + "__" + nomeEnt2 + "__id"
 
     # struttura della sezione finale del nuovo file
     profileApplication = ET.SubElement(newRoot, 'profileApplication')
@@ -108,4 +93,12 @@ else:
 
     # scrivo l'albero creato sul nuovo file
     newTree = ET.ElementTree(newRoot)
-    newTree.write(sys.argv[2] + '.xmi')
+    newTree.write(tipoSchema+"_"+sys.argv[2] + '.xmi')
+
+if ((sys.argv.__len__()) != 3):
+    print("Uso: nomeScript nomeFile/pathFile nomeFileXmi")
+else:
+    creaSchema("SourceSchema")
+    creaSchema("TargetSchema")
+
+
