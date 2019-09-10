@@ -11,10 +11,10 @@
 ################################################################################
 
 # relative path for storing metadata related files 
-SchemaPathPrefix=test			
+SchemaPathPrefix=testBig			
 
 # relative path for storing data files 
-InstancePathPrefix=test
+InstancePathPrefix=testBig
 
 # Source and target schema xml file name
 #FileNames.SourceSchema = sourceSchemaYO.xml
@@ -36,7 +36,7 @@ FileNames.Schemas=metadata.xml
 ################################################################################
 
 # Copies a source relation to the target
-Scenarios.COPY = 8
+Scenarios.COPY = 1000
 
 # Horizontally partition a source relation into multiple target relations
 Scenarios.HORIZPARTITION = 0
