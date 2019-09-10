@@ -13,7 +13,7 @@ else:
       host="localhost",
       user="root",
       passwd="",
-      database = "proviamoinsieme"
+      database = "test"
     )
     mycursor = mydb.cursor()
     print(mydb.is_connected())
