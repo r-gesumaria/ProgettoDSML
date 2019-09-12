@@ -44,11 +44,8 @@ def creaDb(tipoSchema):
         table = table[:-1]
         table += ')'
         mycursor.execute(table)
-
-        #Manca la parte per il target
-        if(tipoSchema == 'SourceSchema'):
-            caricaDati(mycursor, inizioPath, nameEn)
-            mydb.commit()
+        caricaDati(mycursor, inizioPath, nameEn)
+        mydb.commit()
 
     #print(table)
 
