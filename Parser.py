@@ -26,9 +26,10 @@ def creaSchema(tipoSchema):
     for c in root.findall("./Schemas/" + tipoSchema + "/Relation"):
 
         nameEn = c.get('name')
+        nameEnMod = nameEn.replace("__","_")
         en = ET.SubElement(newRoot, "packagedElement")  # elemento per la definizione delle entita
-        en.attrib['xmi:id'] = nameEn
-        en.attrib['name'] = nameEn
+        en.attrib['xmi:id'] = nameEnMod
+        en.attrib['name'] = nameEnMod
         en.attrib['xmi:type'] = 'uml:Class'
         en.attrib['visibility'] = 'private'
 
@@ -42,7 +43,9 @@ def creaSchema(tipoSchema):
         det.attrib['key'] = 'Entity'
 
         # ottengo il nome della PK
-        namePk = root.find("./Schemas/"+tipoSchema+"/*[@name='" + nameEn + "']/PrimaryKey/Attr").text
+
+        if(root.find("./Schemas/"+tipoSchema+"/*[@name='" + nameEn + "']/PrimaryKey/Attr") != None):
+            namePk = root.find("./Schemas/"+tipoSchema+"/*[@name='" + nameEn + "']/PrimaryKey/Attr").text
 
         # per ogni entità crea gli attibuti relativi
         for a in root.findall("./Schemas/"+tipoSchema+"/*[@name='" + nameEn + "']/Attr"):
@@ -67,8 +70,10 @@ def creaSchema(tipoSchema):
     # generiamo la sezione per le relazioni tra le entità
     list = root.findall("./Schemas/"+tipoSchema+"/ForeignKey")
     for fk in list:
-        nomeEnt1 = fk.find("From").get("tableref")
-        nomeEnt2 = fk.find("To").get("tableref")
+        nomeEnt1 = fk.find("From").get("tableref").replace("__","_")
+        #nomeEnt1 = nomeEnt1.replace("__","_")
+        nomeEnt2 = fk.find("To").get("tableref").replace("__","_")
+        #nomeEnt2 = nomeEnt2.replace("__","_")
 
         if (nomeEnt1 != '' and nomeEnt2 != ''):
             rel = ET.SubElement(newRoot, 'packagedElement')
