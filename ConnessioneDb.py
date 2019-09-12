@@ -16,6 +16,9 @@ def creaDb(tipoSchema):
     mydb = creaConnessione("")
     mycursor = mydb.cursor()
     nomeDb = tipoSchema + "_" + sys.argv[2]
+    # Elimino il db se già esiste
+    mycursor.execute("DROP DATABASE IF EXISTS `" + nomeDb + "`;")
+    mydb.commit()
     mycursor.execute("CREATE DATABASE " + nomeDb)
     mydb.close
 
