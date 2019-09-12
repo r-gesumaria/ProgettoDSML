@@ -22,6 +22,11 @@ def creaDb(tipoSchema):
     tree = ET.parse(sys.argv[1])
     root = tree.getroot()
     table = ""
+    # Recupero la parte iniziale
+    path = sys.argv[1]
+    path = path.split("/")
+    inizioPath = sys.argv[1]
+    inizioPath = inizioPath[:len(sys.argv[1])-len(path[-1])]
 
     #connessione al db appena creato e generazione delle tabelle con attributi
     mydb = creaConnessione(nomeDb)
@@ -42,19 +47,19 @@ def creaDb(tipoSchema):
 
         #Manca la parte per il target
         if(tipoSchema == 'SourceSchema'):
-            caricaDati(mycursor, nameEn)
+            caricaDati(mycursor, inizioPath, nameEn)
             mydb.commit()
 
     #print(table)
 
-def caricaDati(cursor, nomeEntita):
+def caricaDati(cursor, path, nomeEntita):
     '''TODO caricare dati
         Esiste un csv per ogni entità
         Controllare se per il target esiste un csv
         Valutare se creare una cartella a parte stesso da ibench
     '''
     queryRiga = ""
-    with open(nomeEntita + ".csv", 'r') as csvfile:
+    with open(path + nomeEntita + ".csv", 'r') as csvfile:
         csv_data = csv.reader(csvfile)
         for row in csv_data:
             queryRiga = 'INSERT INTO ' + nomeEntita + ' VALUES('
