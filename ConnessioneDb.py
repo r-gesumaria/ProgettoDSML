@@ -35,6 +35,8 @@ def creaDb(tipoSchema):
     mydb = creaConnessione(nomeDb)
     mycursor = mydb.cursor()
     for c in root.findall("./Schemas/" + tipoSchema + "/Relation"):
+        #Per ogni relazione, conto quanti attributi ci sono
+        nAttr = 0
         nameEn = c.get('name')
         table = 'CREATE TABLE ' + nameEn + ' ('
 
@@ -43,16 +45,17 @@ def creaDb(tipoSchema):
             table += a.find('Name').text
             if (a.find('DataType').text == 'TEXT'):
                 table += ' varchar(100),'
+            nAttr=nAttr+1
 
         table = table[:-1]
         table += ')'
         mycursor.execute(table)
-        caricaDati(mycursor, inizioPath, nameEn)
+        caricaDati(mycursor, inizioPath, nameEn, nAttr)
         mydb.commit()
 
     #print(table)
 
-def caricaDati(cursor, path, nomeEntita):
+def caricaDati(cursor, path, nomeEntita, numeroAttributi):
     '''TODO caricare dati
         Esiste un csv per ogni entità
         Controllare se per il target esiste un csv
@@ -65,11 +68,14 @@ def caricaDati(cursor, path, nomeEntita):
             queryRiga = 'INSERT INTO ' + nomeEntita + ' VALUES('
             # I valori sono separati da una pipe
             vals = row[0].split("|")
+            attributiDaInserire = numeroAttributi
             for v in range(len(vals)):
+                if(attributiDaInserire < 1): break
                 # Il primo è il numero della riga di excel
                 if(v==0):continue
                 # Concateno il valore della cella
                 queryRiga += "'" + vals[v] + "',"
+                attributiDaInserire = attributiDaInserire-1
             # Tolgo l'ultima virgola
             queryRiga = queryRiga[:-1]
             queryRiga += ")"

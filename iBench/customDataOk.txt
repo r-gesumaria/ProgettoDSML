@@ -10,6 +10,9 @@
 SchemaPathPrefix=udtExam
 InstancePathPrefix=udtExam
 
+# Schema file Name
+FileNames.Schemas=metadata.xml
+
 # Number of Instances for each Basic Scenario Type
 Scenarios.COPY = 1
 
@@ -63,16 +66,17 @@ CSVDataType.3.DBType = TEXT
 ################################################################################
 # Additional configuration
 
-ConfigOptions.NumOfSubElements = 1
+# Number of attributes
+ConfigOptions.NumOfSubElements = 4
 
 RandomSeed = 2
-RepElementCount = 5
+RepElementCount = 9
 MaxStringLength = 100
 MaxNumValue = 1000
 DataGenerator = TrampCSV
 QueryGenerator = Postgres
 MappingLanguage = FOtgds
-ExchangeTargetData = true
+ExchangeTargetData = false
 
 ################################################################################
 # Optional activation/deactivation of output options
@@ -81,6 +85,8 @@ ExchangeTargetData = true
 
 OutputOption.HTMLSchemas = false
 OutputOption.Data = true
+OutputOption.EnableTargetData = true
+TargetTableNumRows = 9
 OutputOption.XMLSchemas = true
 OutputOption.HTMLMapping = false
 OutputOption.TrampXML = true			
