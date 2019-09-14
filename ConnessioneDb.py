@@ -12,7 +12,7 @@ def creaConnessione(nomeDB):
     )
 
 def creaDb(tipoSchema):
-    #connessione a mysql e creazione db
+    # Connessione a mysql e creazione db
     mydb = creaConnessione("")
     mycursor = mydb.cursor()
     nomeDb = tipoSchema + "_" + sys.argv[2]
@@ -31,11 +31,11 @@ def creaDb(tipoSchema):
     inizioPath = sys.argv[1]
     inizioPath = inizioPath[:len(sys.argv[1])-len(path[-1])]
 
-    #connessione al db appena creato e generazione delle tabelle con attributi
+    # Connessione al db appena creato e generazione delle tabelle con attributi
     mydb = creaConnessione(nomeDb)
     mycursor = mydb.cursor()
     for c in root.findall("./Schemas/" + tipoSchema + "/Relation"):
-        #Per ogni relazione, conto quanti attributi ci sono
+        # Per ogni relazione, conto quanti attributi ci sono
         nAttr = 0
         nameEn = c.get('name')
         table = 'CREATE TABLE ' + nameEn + ' ('
@@ -45,6 +45,8 @@ def creaDb(tipoSchema):
             table += a.find('Name').text
             if (a.find('DataType').text == 'TEXT'):
                 table += ' varchar(100),'
+            elif (a.find('DataType').text == 'INT8'):
+                table += ' INT(100),'
             nAttr=nAttr+1
 
         table = table[:-1]
@@ -52,8 +54,6 @@ def creaDb(tipoSchema):
         mycursor.execute(table)
         caricaDati(mycursor, inizioPath, nameEn, nAttr)
         mydb.commit()
-
-    #print(table)
 
 def caricaDati(cursor, path, nomeEntita, numeroAttributi):
     '''TODO caricare dati
