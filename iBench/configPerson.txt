@@ -14,7 +14,7 @@ InstancePathPrefix=person
 FileNames.Schemas=metadataPerson.xml
 
 # Number of Instances for each Basic Scenario Type
-Scenarios.COPY = 50
+Scenarios.COPY = 140
 
 ################################################################################
 # UDTs
@@ -50,18 +50,23 @@ DataType.4.DBType = TEXT
 # Additional configuration
 
 # Number of attributes
-ConfigOptions.NumOfSubElements = 5
+ConfigOptions.NumOfSubElements = 10
 # Deviation of attributes for each relation
 ConfigOptionsDeviation.NumOfSubElements = 3
 
 RandomSeed = 3
-RepElementCount = 100
+RepElementCount = 200
 MaxStringLength = 100
 MaxNumValue = 1000
 DataGenerator = TrampCSV
 QueryGenerator = Postgres
 MappingLanguage = FOtgds
 ExchangeTargetData = false
+
+ConfigOptions.SourceInclusionDependencyPerc = 100 
+ConfigOptions.SourceInclusionDependencyFKPerc = 50	
+ConfigOptions.TargetInclusionDependencyPerc = 100		
+ConfigOptions.TargetInclusionDependencyFKPerc = 50
 
 ################################################################################
 # Optional activation/deactivation of output options
@@ -70,8 +75,8 @@ ExchangeTargetData = false
 
 OutputOption.HTMLSchemas = false
 OutputOption.Data = true
-OutputOption.EnableTargetData = true
-TargetTableNumRows = 100
+OutputOption.EnableTargetData = false
+#TargetTableNumRows = 100
 OutputOption.XMLSchemas = true
 OutputOption.HTMLMapping = false
 OutputOption.TrampXML = true			
