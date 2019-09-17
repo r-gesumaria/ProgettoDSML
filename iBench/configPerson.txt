@@ -1,0 +1,88 @@
+################################################################################
+# iBench configuration file
+#
+# Example with user defined data types (UDTs), create 1 copy primitives and use
+# 4 user defined data types for its 30 attributes
+#
+################################################################################
+
+# Output Path Prefixes
+SchemaPathPrefix=person
+InstancePathPrefix=person
+
+# Schema file Name
+FileNames.Schemas=metadataPerson.xml
+
+# Number of Instances for each Basic Scenario Type
+Scenarios.COPY = 50
+
+################################################################################
+# UDTs
+################################################################################
+
+DataType.NumDataType = 5
+DataType.0.Name = Emails
+DataType.0.ClassPath = toxgene.util.cdata.xmark.Emails
+DataType.0.Percentage = 20.0
+DataType.0.DBType = TEXT
+
+DataType.1.Name = Phones
+DataType.1.ClassPath = toxgene.util.cdata.xmark.PhoneNumbers
+DataType.1.Percentage = 20.0
+DataType.1.DBType = TEXT
+
+DataType.2.Name = FirstNames
+DataType.2.ClassPath = toxgene.util.cdata.xmark.FirstNames
+DataType.2.Percentage = 20.0
+DataType.2.DBType = TEXT
+
+DataType.3.Name = LastNames
+DataType.3.ClassPath = toxgene.util.cdata.xmark.LastNames
+DataType.3.Percentage = 20.0
+DataType.3.DBType = TEXT
+
+DataType.4.Name = Cities
+DataType.4.ClassPath = toxgene.util.cdata.xmark.Cities
+DataType.4.Percentage = 20.0
+DataType.4.DBType = TEXT
+##################################################################################################################
+
+# Additional configuration
+
+# Number of attributes
+ConfigOptions.NumOfSubElements = 5
+# Deviation of attributes for each relation
+ConfigOptionsDeviation.NumOfSubElements = 3
+
+RandomSeed = 3
+RepElementCount = 100
+MaxStringLength = 100
+MaxNumValue = 1000
+DataGenerator = TrampCSV
+QueryGenerator = Postgres
+MappingLanguage = FOtgds
+ExchangeTargetData = false
+
+################################################################################
+# Optional activation/deactivation of output options
+# create only TrampXML metadata file and data
+################################################################################ 
+
+OutputOption.HTMLSchemas = false
+OutputOption.Data = true
+OutputOption.EnableTargetData = true
+TargetTableNumRows = 100
+OutputOption.XMLSchemas = true
+OutputOption.HTMLMapping = false
+OutputOption.TrampXML = true			
+OutputOption.Clio = false				
+
+################################################################################
+# Optional activation/deactivation of parts of the generated Tramp XML document
+################################################################################
+
+TrampXMLOutput.Correspondences = true
+TrampXMLOutput.Transformations = true
+TrampXMLOutput.Data = true
+TrampXMLOutput.ConnectionInfo = false
+TrampXMLOutput.FDs = false	  			
