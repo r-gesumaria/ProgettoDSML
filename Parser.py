@@ -27,6 +27,9 @@ def creaSchema(tipoSchema):
 
         nameEn = c.get('name')
         nameEnMod = nameEn.replace("__","_")
+        # viene eliminata la dicitura "copy" dai nomi delle entità per avere lo stesso nome
+        # sia nel source che nel target
+        nameEnMod = re.sub('copy.*_.*', '', nameEnMod)
         en = ET.SubElement(newRoot, "packagedElement")  # elemento per la definizione delle entita
         en.attrib['xmi:id'] = nameEnMod
         en.attrib['name'] = nameEnMod
@@ -49,9 +52,7 @@ def creaSchema(tipoSchema):
 
         # per ogni entità crea gli attibuti relativi
         for a in root.findall("./Schemas/"+tipoSchema+"/*[@name='" + nameEn + "']/Attr"):
-
             attr = ET.SubElement(en, "ownedAttribute")
-
             # creo la sezione per identificare la PK
             if (a.find('Name').text == namePk):
                 extPK = ET.SubElement(attr, 'xmi:Extension')
@@ -70,15 +71,18 @@ def creaSchema(tipoSchema):
     # generiamo la sezione per le relazioni tra le entità
     list = root.findall("./Schemas/"+tipoSchema+"/ForeignKey")
     for fk in list:
+        #il replace è stato utilizzato per non avere problemi con iBench nella creazione
+        #delle relazioni dato che utilizza un formato de tipo nomeEntità1__nomeEntità2__id,
+        #quindi se nel nome di una delle relazioni incorre in un "__" va in errore.
         nomeEnt1 = fk.find("From").get("tableref").replace("__","_")
-        #nomeEnt1 = nomeEnt1.replace("__","_")
         nomeEnt2 = fk.find("To").get("tableref").replace("__","_")
-        #nomeEnt2 = nomeEnt2.replace("__","_")
 
         if (nomeEnt1 != '' and nomeEnt2 != ''):
             rel = ET.SubElement(newRoot, 'packagedElement')
             rel.attrib['xmi:type'] = 'uml:Association'
-            rel.attrib['xmi:id'] = nomeEnt1 + "__" + nomeEnt2 + "__id"
+            #viene eliminata la dicitura "copy" dai nomi delle entità per avere lo stesso nome
+            # sia nel source che nel target
+            rel.attrib['xmi:id'] = re.sub('copy.*_.*', '', nomeEnt1) + "__" + re.sub('copy.*_.*', '', nomeEnt2) + "__id"
 
     # struttura della sezione finale del nuovo file
     profileApplication = ET.SubElement(newRoot, 'profileApplication')
