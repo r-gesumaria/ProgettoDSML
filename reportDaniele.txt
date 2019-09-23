@@ -1,0 +1,5 @@
+sc0 33.803s 38.991s 39.646s
+sc1 302s    310s    312s
+sc2 443s 
+
+sc 490 entità, 140 tuple, 10 elementi, 80% pk e 50% fk --> 490s
