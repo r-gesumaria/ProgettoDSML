@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:element name="S_CP_ME_5_1_2_0_1_2_2_1_0_0_0_100_0_0_1_0_1_0_0_0_0_1_1_1_1_2_0_0_0_Tgt.xsd">
+   <xs:complexType>
+      <xs:sequence>
+         <xs:element name="test_cp_0_nl0_ce0copy0_0" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="nut_cp_0_nl0_ae0ke0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="art_cp_0_nl0_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="slope_cp_0_nl0_ae2" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="measure_cp_0_nl0_ae3" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="touch_cp_0_nl0_ae4" minOccurs="0" maxOccurs="1" type="xs:string"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="cheese_cp_1_nl0_ce0copy1_1" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="society_cp_1_nl0_ae0ke0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="compare_cp_1_nl0_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="branch_cp_1_nl0_ae2" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="demand_cp_1_nl0_ae3" minOccurs="0" maxOccurs="1" type="xs:string"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="great_cp_2_nl0_ce0copy2_2" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="board_cp_2_nl0_ae0ke0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="affect_cp_2_nl0_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="different_cp_3_nl0_ce0copy3_3" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="society_cp_3_nl0_ae0ke0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="warn_cp_3_nl0_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="tail_cp_3_nl0_ae2" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="red_cp_3_nl0_ae3" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="wrong_cp_3_nl0_ae4" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="past_cp_3_nl0_ae5" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="wheel_cp_3_nl0_ae6" minOccurs="0" maxOccurs="1" type="xs:string"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="work_cp_4_nl0_ce0copy4_4" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="letter_cp_4_nl0_ae0ke0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="blue_cp_4_nl0_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="describe_cp_4_nl0_ae2" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="report_cp_4_nl0_ae3" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="night_cp_4_nl0_ae4" minOccurs="0" maxOccurs="1" type="xs:string"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="find_cp_5_nl0_ce0copy5_5" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="attention_cp_5_nl0_ae0ke0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="discover_cp_5_nl0_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="different_cp_6_nl0_ce0copy6_6" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="reveal_cp_6_nl0_ae0ke0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="oven_cp_6_nl0_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="narrow_cp_7_nl0_ce0copy7_7" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="rest_cp_7_nl0_ae0ke0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="place_cp_7_nl0_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="expansion_cp_8_nl0_ce0copy8_8" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="pipe_cp_8_nl0_ae0ke0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="indicate_cp_8_nl0_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="thank_cp_8_nl0_ae2" minOccurs="0" maxOccurs="1" type="xs:string"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="stick_cp_9_nl0_ce0copy9_9" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="order_cp_9_nl0_ae0ke0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="twist_cp_9_nl0_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="division_me_0_nl0_ce0" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="chin_me_0_nl0_ae0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="mixed_me_0_nl0_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="small_me_0_nl0_ae2" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="brain_me_0_nl1_ae0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="branch_me_0_nl1_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="swim_me_0_nl1_ae2" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="place_me_0_nl1_ae3" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="approval_me_0_nl1_ae4" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="blow_me_0_nl1_ae5" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="account_me_0_nl0_ae0comp1_joinattr_0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="knee_me_1_nl0_ce0" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="winter_me_1_nl0_ae0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="powder_me_1_nl0_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="work_me_1_nl0_ae2" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="discuss_me_1_nl0_ae3" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="involve_me_1_nl0_ae4" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="use_me_1_nl0_ae5" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="dead_me_1_nl1_ae0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="draw_me_1_nl1_ae1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="send_me_1_nl1_ae2" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="regular_me_1_nl1_ae3" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                  <xs:element name="property_me_1_nl0_ae0comp1_joinattr_0" minOccurs="0" maxOccurs="1" type="xs:string"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+<xs:key name="test_cp_0_nl0_ce0copy0_0nut_cp_0_nl0_ae0ke0"><xs:selector xpath="./test_cp_0_nl0_ce0copy0_0"/><xs:field xpath="nut_cp_0_nl0_ae0ke0"/></xs:key>
+<xs:key name="cheese_cp_1_nl0_ce0copy1_1society_cp_1_nl0_ae0ke0"><xs:selector xpath="./cheese_cp_1_nl0_ce0copy1_1"/><xs:field xpath="society_cp_1_nl0_ae0ke0"/></xs:key>
+<xs:key name="great_cp_2_nl0_ce0copy2_2board_cp_2_nl0_ae0ke0"><xs:selector xpath="./great_cp_2_nl0_ce0copy2_2"/><xs:field xpath="board_cp_2_nl0_ae0ke0"/></xs:key>
+<xs:key name="different_cp_3_nl0_ce0copy3_3society_cp_3_nl0_ae0ke0"><xs:selector xpath="./different_cp_3_nl0_ce0copy3_3"/><xs:field xpath="society_cp_3_nl0_ae0ke0"/></xs:key>
+<xs:key name="work_cp_4_nl0_ce0copy4_4letter_cp_4_nl0_ae0ke0"><xs:selector xpath="./work_cp_4_nl0_ce0copy4_4"/><xs:field xpath="letter_cp_4_nl0_ae0ke0"/></xs:key>
+<xs:key name="find_cp_5_nl0_ce0copy5_5attention_cp_5_nl0_ae0ke0"><xs:selector xpath="./find_cp_5_nl0_ce0copy5_5"/><xs:field xpath="attention_cp_5_nl0_ae0ke0"/></xs:key>
+<xs:key name="different_cp_6_nl0_ce0copy6_6reveal_cp_6_nl0_ae0ke0"><xs:selector xpath="./different_cp_6_nl0_ce0copy6_6"/><xs:field xpath="reveal_cp_6_nl0_ae0ke0"/></xs:key>
+<xs:key name="narrow_cp_7_nl0_ce0copy7_7rest_cp_7_nl0_ae0ke0"><xs:selector xpath="./narrow_cp_7_nl0_ce0copy7_7"/><xs:field xpath="rest_cp_7_nl0_ae0ke0"/></xs:key>
+<xs:key name="expansion_cp_8_nl0_ce0copy8_8pipe_cp_8_nl0_ae0ke0"><xs:selector xpath="./expansion_cp_8_nl0_ce0copy8_8"/><xs:field xpath="pipe_cp_8_nl0_ae0ke0"/></xs:key>
+<xs:key name="stick_cp_9_nl0_ce0copy9_9order_cp_9_nl0_ae0ke0"><xs:selector xpath="./stick_cp_9_nl0_ce0copy9_9"/><xs:field xpath="order_cp_9_nl0_ae0ke0"/></xs:key>
+<xs:key name="division_me_0_nl0_ce0account_me_0_nl0_ae0comp1_joinattr_0"><xs:selector xpath="./division_me_0_nl0_ce0"/><xs:field xpath="account_me_0_nl0_ae0comp1_joinattr_0"/></xs:key>
+<xs:key name="knee_me_1_nl0_ce0property_me_1_nl0_ae0comp1_joinattr_0"><xs:selector xpath="./knee_me_1_nl0_ce0"/><xs:field xpath="property_me_1_nl0_ae0comp1_joinattr_0"/></xs:key>
+</xs:element>
+</xs:schema>

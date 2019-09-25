@@ -1,0 +1,1521 @@
+<xm:MappingScenario xmlns:xm="org/vagabond/xmlmodel">
+  <Schemas>
+    <SourceSchema>
+      <Relation name="test_cp_0_nl0_ce0">
+        <Attr>
+          <Name>nut_cp_0_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>art_cp_0_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>slope_cp_0_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>measure_cp_0_nl0_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>touch_cp_0_nl0_ae4</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>nut_cp_0_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="cheese_cp_1_nl0_ce0">
+        <Attr>
+          <Name>society_cp_1_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>compare_cp_1_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>branch_cp_1_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>demand_cp_1_nl0_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>society_cp_1_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="great_cp_2_nl0_ce0">
+        <Attr>
+          <Name>board_cp_2_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>affect_cp_2_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>board_cp_2_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="different_cp_3_nl0_ce0">
+        <Attr>
+          <Name>society_cp_3_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>warn_cp_3_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>tail_cp_3_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>red_cp_3_nl0_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>wrong_cp_3_nl0_ae4</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>past_cp_3_nl0_ae5</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>wheel_cp_3_nl0_ae6</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>society_cp_3_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="work_cp_4_nl0_ce0">
+        <Attr>
+          <Name>letter_cp_4_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>blue_cp_4_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>describe_cp_4_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>report_cp_4_nl0_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>night_cp_4_nl0_ae4</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>letter_cp_4_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="find_cp_5_nl0_ce0">
+        <Attr>
+          <Name>attention_cp_5_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>discover_cp_5_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>attention_cp_5_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="different_cp_6_nl0_ce0">
+        <Attr>
+          <Name>reveal_cp_6_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>oven_cp_6_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>reveal_cp_6_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="narrow_cp_7_nl0_ce0">
+        <Attr>
+          <Name>rest_cp_7_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>place_cp_7_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>rest_cp_7_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="expansion_cp_8_nl0_ce0">
+        <Attr>
+          <Name>pipe_cp_8_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>indicate_cp_8_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>thank_cp_8_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>pipe_cp_8_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="stick_cp_9_nl0_ce0">
+        <Attr>
+          <Name>order_cp_9_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>twist_cp_9_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>order_cp_9_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="future_me_0_nl0_ce0">
+        <Attr>
+          <Name>chin_me_0_nl0_ae0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>mixed_me_0_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>small_me_0_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>account_me_0_nl0_ae0comp1_joinref_0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>account_me_0_nl0_ae0comp1_joinref_0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="broken_me_0_nl0_ce1">
+        <Attr>
+          <Name>brain_me_0_nl1_ae0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>branch_me_0_nl1_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>swim_me_0_nl1_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>place_me_0_nl1_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>approval_me_0_nl1_ae4</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>blow_me_0_nl1_ae5</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>account_me_0_nl0_ae0comp1_joinattr_0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>account_me_0_nl0_ae0comp1_joinattr_0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="gun_me_1_nl0_ce0">
+        <Attr>
+          <Name>winter_me_1_nl0_ae0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>powder_me_1_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>work_me_1_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>discuss_me_1_nl0_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>involve_me_1_nl0_ae4</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>use_me_1_nl0_ae5</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>property_me_1_nl0_ae0comp1_joinref_0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>property_me_1_nl0_ae0comp1_joinref_0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="paint_me_1_nl0_ce1">
+        <Attr>
+          <Name>dead_me_1_nl1_ae0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>draw_me_1_nl1_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>send_me_1_nl1_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>regular_me_1_nl1_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>property_me_1_nl0_ae0comp1_joinattr_0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>property_me_1_nl0_ae0comp1_joinattr_0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <ForeignKey>
+        <From tableref="future_me_0_nl0_ce0">
+          <Attr>account_me_0_nl0_ae0comp1_joinref_0</Attr>
+        </From>
+        <To tableref="broken_me_0_nl0_ce1">
+          <Attr>account_me_0_nl0_ae0comp1_joinattr_0</Attr>
+        </To>
+      </ForeignKey>
+      <ForeignKey>
+        <From tableref="gun_me_1_nl0_ce0">
+          <Attr>property_me_1_nl0_ae0comp1_joinref_0</Attr>
+        </From>
+        <To tableref="paint_me_1_nl0_ce1">
+          <Attr>property_me_1_nl0_ae0comp1_joinattr_0</Attr>
+        </To>
+      </ForeignKey>
+    </SourceSchema>
+    <TargetSchema>
+      <Relation name="test_cp_0_nl0_ce0copy0_0">
+        <Attr>
+          <Name>nut_cp_0_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>art_cp_0_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>slope_cp_0_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>measure_cp_0_nl0_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>touch_cp_0_nl0_ae4</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>nut_cp_0_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="cheese_cp_1_nl0_ce0copy1_1">
+        <Attr>
+          <Name>society_cp_1_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>compare_cp_1_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>branch_cp_1_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>demand_cp_1_nl0_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>society_cp_1_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="great_cp_2_nl0_ce0copy2_2">
+        <Attr>
+          <Name>board_cp_2_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>affect_cp_2_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>board_cp_2_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="different_cp_3_nl0_ce0copy3_3">
+        <Attr>
+          <Name>society_cp_3_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>warn_cp_3_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>tail_cp_3_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>red_cp_3_nl0_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>wrong_cp_3_nl0_ae4</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>past_cp_3_nl0_ae5</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>wheel_cp_3_nl0_ae6</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>society_cp_3_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="work_cp_4_nl0_ce0copy4_4">
+        <Attr>
+          <Name>letter_cp_4_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>blue_cp_4_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>describe_cp_4_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>report_cp_4_nl0_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>night_cp_4_nl0_ae4</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>letter_cp_4_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="find_cp_5_nl0_ce0copy5_5">
+        <Attr>
+          <Name>attention_cp_5_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>discover_cp_5_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>attention_cp_5_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="different_cp_6_nl0_ce0copy6_6">
+        <Attr>
+          <Name>reveal_cp_6_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>oven_cp_6_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>reveal_cp_6_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="narrow_cp_7_nl0_ce0copy7_7">
+        <Attr>
+          <Name>rest_cp_7_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>place_cp_7_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>rest_cp_7_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="expansion_cp_8_nl0_ce0copy8_8">
+        <Attr>
+          <Name>pipe_cp_8_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>indicate_cp_8_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>thank_cp_8_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>pipe_cp_8_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="stick_cp_9_nl0_ce0copy9_9">
+        <Attr>
+          <Name>order_cp_9_nl0_ae0ke0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>twist_cp_9_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>order_cp_9_nl0_ae0ke0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="division_me_0_nl0_ce0">
+        <Attr>
+          <Name>chin_me_0_nl0_ae0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>mixed_me_0_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>small_me_0_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>brain_me_0_nl1_ae0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>branch_me_0_nl1_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>swim_me_0_nl1_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>place_me_0_nl1_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>approval_me_0_nl1_ae4</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>blow_me_0_nl1_ae5</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>account_me_0_nl0_ae0comp1_joinattr_0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>account_me_0_nl0_ae0comp1_joinattr_0</Attr>
+        </PrimaryKey>
+      </Relation>
+      <Relation name="knee_me_1_nl0_ce0">
+        <Attr>
+          <Name>winter_me_1_nl0_ae0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>powder_me_1_nl0_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>work_me_1_nl0_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>discuss_me_1_nl0_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>involve_me_1_nl0_ae4</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>use_me_1_nl0_ae5</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>dead_me_1_nl1_ae0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>draw_me_1_nl1_ae1</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>send_me_1_nl1_ae2</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>regular_me_1_nl1_ae3</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <Attr>
+          <Name>property_me_1_nl0_ae0comp1_joinattr_0</Name>
+          <DataType>TEXT</DataType>
+        </Attr>
+        <PrimaryKey>
+          <Attr>property_me_1_nl0_ae0comp1_joinattr_0</Attr>
+        </PrimaryKey>
+      </Relation>
+    </TargetSchema>
+  </Schemas>
+  <Correspondences>
+    <Correspondence id="C0">
+      <From tableref="test_cp_0_nl0_ce0">
+        <Attr>nut_cp_0_nl0_ae0ke0</Attr>
+      </From>
+      <To tableref="test_cp_0_nl0_ce0copy0_0">
+        <Attr>nut_cp_0_nl0_ae0ke0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C1">
+      <From tableref="test_cp_0_nl0_ce0">
+        <Attr>art_cp_0_nl0_ae1</Attr>
+      </From>
+      <To tableref="test_cp_0_nl0_ce0copy0_0">
+        <Attr>art_cp_0_nl0_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C2">
+      <From tableref="test_cp_0_nl0_ce0">
+        <Attr>slope_cp_0_nl0_ae2</Attr>
+      </From>
+      <To tableref="test_cp_0_nl0_ce0copy0_0">
+        <Attr>slope_cp_0_nl0_ae2</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C3">
+      <From tableref="test_cp_0_nl0_ce0">
+        <Attr>measure_cp_0_nl0_ae3</Attr>
+      </From>
+      <To tableref="test_cp_0_nl0_ce0copy0_0">
+        <Attr>measure_cp_0_nl0_ae3</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C4">
+      <From tableref="test_cp_0_nl0_ce0">
+        <Attr>touch_cp_0_nl0_ae4</Attr>
+      </From>
+      <To tableref="test_cp_0_nl0_ce0copy0_0">
+        <Attr>touch_cp_0_nl0_ae4</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C5">
+      <From tableref="cheese_cp_1_nl0_ce0">
+        <Attr>society_cp_1_nl0_ae0ke0</Attr>
+      </From>
+      <To tableref="cheese_cp_1_nl0_ce0copy1_1">
+        <Attr>society_cp_1_nl0_ae0ke0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C6">
+      <From tableref="cheese_cp_1_nl0_ce0">
+        <Attr>compare_cp_1_nl0_ae1</Attr>
+      </From>
+      <To tableref="cheese_cp_1_nl0_ce0copy1_1">
+        <Attr>compare_cp_1_nl0_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C7">
+      <From tableref="cheese_cp_1_nl0_ce0">
+        <Attr>branch_cp_1_nl0_ae2</Attr>
+      </From>
+      <To tableref="cheese_cp_1_nl0_ce0copy1_1">
+        <Attr>branch_cp_1_nl0_ae2</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C8">
+      <From tableref="cheese_cp_1_nl0_ce0">
+        <Attr>demand_cp_1_nl0_ae3</Attr>
+      </From>
+      <To tableref="cheese_cp_1_nl0_ce0copy1_1">
+        <Attr>demand_cp_1_nl0_ae3</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C9">
+      <From tableref="great_cp_2_nl0_ce0">
+        <Attr>board_cp_2_nl0_ae0ke0</Attr>
+      </From>
+      <To tableref="great_cp_2_nl0_ce0copy2_2">
+        <Attr>board_cp_2_nl0_ae0ke0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C10">
+      <From tableref="great_cp_2_nl0_ce0">
+        <Attr>affect_cp_2_nl0_ae1</Attr>
+      </From>
+      <To tableref="great_cp_2_nl0_ce0copy2_2">
+        <Attr>affect_cp_2_nl0_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C11">
+      <From tableref="different_cp_3_nl0_ce0">
+        <Attr>society_cp_3_nl0_ae0ke0</Attr>
+      </From>
+      <To tableref="different_cp_3_nl0_ce0copy3_3">
+        <Attr>society_cp_3_nl0_ae0ke0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C12">
+      <From tableref="different_cp_3_nl0_ce0">
+        <Attr>warn_cp_3_nl0_ae1</Attr>
+      </From>
+      <To tableref="different_cp_3_nl0_ce0copy3_3">
+        <Attr>warn_cp_3_nl0_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C13">
+      <From tableref="different_cp_3_nl0_ce0">
+        <Attr>tail_cp_3_nl0_ae2</Attr>
+      </From>
+      <To tableref="different_cp_3_nl0_ce0copy3_3">
+        <Attr>tail_cp_3_nl0_ae2</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C14">
+      <From tableref="different_cp_3_nl0_ce0">
+        <Attr>red_cp_3_nl0_ae3</Attr>
+      </From>
+      <To tableref="different_cp_3_nl0_ce0copy3_3">
+        <Attr>red_cp_3_nl0_ae3</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C15">
+      <From tableref="different_cp_3_nl0_ce0">
+        <Attr>wrong_cp_3_nl0_ae4</Attr>
+      </From>
+      <To tableref="different_cp_3_nl0_ce0copy3_3">
+        <Attr>wrong_cp_3_nl0_ae4</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C16">
+      <From tableref="different_cp_3_nl0_ce0">
+        <Attr>past_cp_3_nl0_ae5</Attr>
+      </From>
+      <To tableref="different_cp_3_nl0_ce0copy3_3">
+        <Attr>past_cp_3_nl0_ae5</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C17">
+      <From tableref="different_cp_3_nl0_ce0">
+        <Attr>wheel_cp_3_nl0_ae6</Attr>
+      </From>
+      <To tableref="different_cp_3_nl0_ce0copy3_3">
+        <Attr>wheel_cp_3_nl0_ae6</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C18">
+      <From tableref="work_cp_4_nl0_ce0">
+        <Attr>letter_cp_4_nl0_ae0ke0</Attr>
+      </From>
+      <To tableref="work_cp_4_nl0_ce0copy4_4">
+        <Attr>letter_cp_4_nl0_ae0ke0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C19">
+      <From tableref="work_cp_4_nl0_ce0">
+        <Attr>blue_cp_4_nl0_ae1</Attr>
+      </From>
+      <To tableref="work_cp_4_nl0_ce0copy4_4">
+        <Attr>blue_cp_4_nl0_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C20">
+      <From tableref="work_cp_4_nl0_ce0">
+        <Attr>describe_cp_4_nl0_ae2</Attr>
+      </From>
+      <To tableref="work_cp_4_nl0_ce0copy4_4">
+        <Attr>describe_cp_4_nl0_ae2</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C21">
+      <From tableref="work_cp_4_nl0_ce0">
+        <Attr>report_cp_4_nl0_ae3</Attr>
+      </From>
+      <To tableref="work_cp_4_nl0_ce0copy4_4">
+        <Attr>report_cp_4_nl0_ae3</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C22">
+      <From tableref="work_cp_4_nl0_ce0">
+        <Attr>night_cp_4_nl0_ae4</Attr>
+      </From>
+      <To tableref="work_cp_4_nl0_ce0copy4_4">
+        <Attr>night_cp_4_nl0_ae4</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C23">
+      <From tableref="find_cp_5_nl0_ce0">
+        <Attr>attention_cp_5_nl0_ae0ke0</Attr>
+      </From>
+      <To tableref="find_cp_5_nl0_ce0copy5_5">
+        <Attr>attention_cp_5_nl0_ae0ke0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C24">
+      <From tableref="find_cp_5_nl0_ce0">
+        <Attr>discover_cp_5_nl0_ae1</Attr>
+      </From>
+      <To tableref="find_cp_5_nl0_ce0copy5_5">
+        <Attr>discover_cp_5_nl0_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C25">
+      <From tableref="different_cp_6_nl0_ce0">
+        <Attr>reveal_cp_6_nl0_ae0ke0</Attr>
+      </From>
+      <To tableref="different_cp_6_nl0_ce0copy6_6">
+        <Attr>reveal_cp_6_nl0_ae0ke0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C26">
+      <From tableref="different_cp_6_nl0_ce0">
+        <Attr>oven_cp_6_nl0_ae1</Attr>
+      </From>
+      <To tableref="different_cp_6_nl0_ce0copy6_6">
+        <Attr>oven_cp_6_nl0_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C27">
+      <From tableref="narrow_cp_7_nl0_ce0">
+        <Attr>rest_cp_7_nl0_ae0ke0</Attr>
+      </From>
+      <To tableref="narrow_cp_7_nl0_ce0copy7_7">
+        <Attr>rest_cp_7_nl0_ae0ke0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C28">
+      <From tableref="narrow_cp_7_nl0_ce0">
+        <Attr>place_cp_7_nl0_ae1</Attr>
+      </From>
+      <To tableref="narrow_cp_7_nl0_ce0copy7_7">
+        <Attr>place_cp_7_nl0_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C29">
+      <From tableref="expansion_cp_8_nl0_ce0">
+        <Attr>pipe_cp_8_nl0_ae0ke0</Attr>
+      </From>
+      <To tableref="expansion_cp_8_nl0_ce0copy8_8">
+        <Attr>pipe_cp_8_nl0_ae0ke0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C30">
+      <From tableref="expansion_cp_8_nl0_ce0">
+        <Attr>indicate_cp_8_nl0_ae1</Attr>
+      </From>
+      <To tableref="expansion_cp_8_nl0_ce0copy8_8">
+        <Attr>indicate_cp_8_nl0_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C31">
+      <From tableref="expansion_cp_8_nl0_ce0">
+        <Attr>thank_cp_8_nl0_ae2</Attr>
+      </From>
+      <To tableref="expansion_cp_8_nl0_ce0copy8_8">
+        <Attr>thank_cp_8_nl0_ae2</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C32">
+      <From tableref="stick_cp_9_nl0_ce0">
+        <Attr>order_cp_9_nl0_ae0ke0</Attr>
+      </From>
+      <To tableref="stick_cp_9_nl0_ce0copy9_9">
+        <Attr>order_cp_9_nl0_ae0ke0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C33">
+      <From tableref="stick_cp_9_nl0_ce0">
+        <Attr>twist_cp_9_nl0_ae1</Attr>
+      </From>
+      <To tableref="stick_cp_9_nl0_ce0copy9_9">
+        <Attr>twist_cp_9_nl0_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C34">
+      <From tableref="future_me_0_nl0_ce0">
+        <Attr>chin_me_0_nl0_ae0</Attr>
+      </From>
+      <To tableref="division_me_0_nl0_ce0">
+        <Attr>chin_me_0_nl0_ae0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C35">
+      <From tableref="future_me_0_nl0_ce0">
+        <Attr>mixed_me_0_nl0_ae1</Attr>
+      </From>
+      <To tableref="division_me_0_nl0_ce0">
+        <Attr>mixed_me_0_nl0_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C36">
+      <From tableref="future_me_0_nl0_ce0">
+        <Attr>small_me_0_nl0_ae2</Attr>
+      </From>
+      <To tableref="division_me_0_nl0_ce0">
+        <Attr>small_me_0_nl0_ae2</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C37">
+      <From tableref="broken_me_0_nl0_ce1">
+        <Attr>brain_me_0_nl1_ae0</Attr>
+      </From>
+      <To tableref="division_me_0_nl0_ce0">
+        <Attr>brain_me_0_nl1_ae0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C38">
+      <From tableref="broken_me_0_nl0_ce1">
+        <Attr>branch_me_0_nl1_ae1</Attr>
+      </From>
+      <To tableref="division_me_0_nl0_ce0">
+        <Attr>branch_me_0_nl1_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C39">
+      <From tableref="broken_me_0_nl0_ce1">
+        <Attr>swim_me_0_nl1_ae2</Attr>
+      </From>
+      <To tableref="division_me_0_nl0_ce0">
+        <Attr>swim_me_0_nl1_ae2</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C40">
+      <From tableref="broken_me_0_nl0_ce1">
+        <Attr>place_me_0_nl1_ae3</Attr>
+      </From>
+      <To tableref="division_me_0_nl0_ce0">
+        <Attr>place_me_0_nl1_ae3</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C41">
+      <From tableref="broken_me_0_nl0_ce1">
+        <Attr>approval_me_0_nl1_ae4</Attr>
+      </From>
+      <To tableref="division_me_0_nl0_ce0">
+        <Attr>approval_me_0_nl1_ae4</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C42">
+      <From tableref="broken_me_0_nl0_ce1">
+        <Attr>blow_me_0_nl1_ae5</Attr>
+      </From>
+      <To tableref="division_me_0_nl0_ce0">
+        <Attr>blow_me_0_nl1_ae5</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C43">
+      <From tableref="broken_me_0_nl0_ce1">
+        <Attr>account_me_0_nl0_ae0comp1_joinattr_0</Attr>
+      </From>
+      <To tableref="division_me_0_nl0_ce0">
+        <Attr>account_me_0_nl0_ae0comp1_joinattr_0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C44">
+      <From tableref="gun_me_1_nl0_ce0">
+        <Attr>winter_me_1_nl0_ae0</Attr>
+      </From>
+      <To tableref="knee_me_1_nl0_ce0">
+        <Attr>winter_me_1_nl0_ae0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C45">
+      <From tableref="gun_me_1_nl0_ce0">
+        <Attr>powder_me_1_nl0_ae1</Attr>
+      </From>
+      <To tableref="knee_me_1_nl0_ce0">
+        <Attr>powder_me_1_nl0_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C46">
+      <From tableref="gun_me_1_nl0_ce0">
+        <Attr>work_me_1_nl0_ae2</Attr>
+      </From>
+      <To tableref="knee_me_1_nl0_ce0">
+        <Attr>work_me_1_nl0_ae2</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C47">
+      <From tableref="gun_me_1_nl0_ce0">
+        <Attr>discuss_me_1_nl0_ae3</Attr>
+      </From>
+      <To tableref="knee_me_1_nl0_ce0">
+        <Attr>discuss_me_1_nl0_ae3</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C48">
+      <From tableref="gun_me_1_nl0_ce0">
+        <Attr>involve_me_1_nl0_ae4</Attr>
+      </From>
+      <To tableref="knee_me_1_nl0_ce0">
+        <Attr>involve_me_1_nl0_ae4</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C49">
+      <From tableref="gun_me_1_nl0_ce0">
+        <Attr>use_me_1_nl0_ae5</Attr>
+      </From>
+      <To tableref="knee_me_1_nl0_ce0">
+        <Attr>use_me_1_nl0_ae5</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C50">
+      <From tableref="paint_me_1_nl0_ce1">
+        <Attr>dead_me_1_nl1_ae0</Attr>
+      </From>
+      <To tableref="knee_me_1_nl0_ce0">
+        <Attr>dead_me_1_nl1_ae0</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C51">
+      <From tableref="paint_me_1_nl0_ce1">
+        <Attr>draw_me_1_nl1_ae1</Attr>
+      </From>
+      <To tableref="knee_me_1_nl0_ce0">
+        <Attr>draw_me_1_nl1_ae1</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C52">
+      <From tableref="paint_me_1_nl0_ce1">
+        <Attr>send_me_1_nl1_ae2</Attr>
+      </From>
+      <To tableref="knee_me_1_nl0_ce0">
+        <Attr>send_me_1_nl1_ae2</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C53">
+      <From tableref="paint_me_1_nl0_ce1">
+        <Attr>regular_me_1_nl1_ae3</Attr>
+      </From>
+      <To tableref="knee_me_1_nl0_ce0">
+        <Attr>regular_me_1_nl1_ae3</Attr>
+      </To>
+    </Correspondence>
+    <Correspondence id="C54">
+      <From tableref="paint_me_1_nl0_ce1">
+        <Attr>property_me_1_nl0_ae0comp1_joinattr_0</Attr>
+      </From>
+      <To tableref="knee_me_1_nl0_ce0">
+        <Attr>property_me_1_nl0_ae0comp1_joinattr_0</Attr>
+      </To>
+    </Correspondence>
+  </Correspondences>
+  <Mappings>
+    <Mapping id="M0">
+      <Uses>
+        <Correspondence ref="C0"/>
+        <Correspondence ref="C1"/>
+        <Correspondence ref="C2"/>
+        <Correspondence ref="C3"/>
+        <Correspondence ref="C4"/>
+      </Uses>
+      <Foreach>
+        <Atom tableref="test_cp_0_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+          <Var>d</Var>
+          <Var>e</Var>
+        </Atom>
+      </Foreach>
+      <Exists>
+        <Atom tableref="test_cp_0_nl0_ce0copy0_0">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+          <Var>d</Var>
+          <Var>e</Var>
+        </Atom>
+      </Exists>
+    </Mapping>
+    <Mapping id="M1">
+      <Uses>
+        <Correspondence ref="C5"/>
+        <Correspondence ref="C6"/>
+        <Correspondence ref="C7"/>
+        <Correspondence ref="C8"/>
+      </Uses>
+      <Foreach>
+        <Atom tableref="cheese_cp_1_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+          <Var>d</Var>
+        </Atom>
+      </Foreach>
+      <Exists>
+        <Atom tableref="cheese_cp_1_nl0_ce0copy1_1">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+          <Var>d</Var>
+        </Atom>
+      </Exists>
+    </Mapping>
+    <Mapping id="M2">
+      <Uses>
+        <Correspondence ref="C9"/>
+        <Correspondence ref="C10"/>
+      </Uses>
+      <Foreach>
+        <Atom tableref="great_cp_2_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+        </Atom>
+      </Foreach>
+      <Exists>
+        <Atom tableref="great_cp_2_nl0_ce0copy2_2">
+          <Var>a</Var>
+          <Var>b</Var>
+        </Atom>
+      </Exists>
+    </Mapping>
+    <Mapping id="M3">
+      <Uses>
+        <Correspondence ref="C11"/>
+        <Correspondence ref="C12"/>
+        <Correspondence ref="C13"/>
+        <Correspondence ref="C14"/>
+        <Correspondence ref="C15"/>
+        <Correspondence ref="C16"/>
+        <Correspondence ref="C17"/>
+      </Uses>
+      <Foreach>
+        <Atom tableref="different_cp_3_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+          <Var>d</Var>
+          <Var>e</Var>
+          <Var>f</Var>
+          <Var>g</Var>
+        </Atom>
+      </Foreach>
+      <Exists>
+        <Atom tableref="different_cp_3_nl0_ce0copy3_3">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+          <Var>d</Var>
+          <Var>e</Var>
+          <Var>f</Var>
+          <Var>g</Var>
+        </Atom>
+      </Exists>
+    </Mapping>
+    <Mapping id="M4">
+      <Uses>
+        <Correspondence ref="C18"/>
+        <Correspondence ref="C19"/>
+        <Correspondence ref="C20"/>
+        <Correspondence ref="C21"/>
+        <Correspondence ref="C22"/>
+      </Uses>
+      <Foreach>
+        <Atom tableref="work_cp_4_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+          <Var>d</Var>
+          <Var>e</Var>
+        </Atom>
+      </Foreach>
+      <Exists>
+        <Atom tableref="work_cp_4_nl0_ce0copy4_4">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+          <Var>d</Var>
+          <Var>e</Var>
+        </Atom>
+      </Exists>
+    </Mapping>
+    <Mapping id="M5">
+      <Uses>
+        <Correspondence ref="C23"/>
+        <Correspondence ref="C24"/>
+      </Uses>
+      <Foreach>
+        <Atom tableref="find_cp_5_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+        </Atom>
+      </Foreach>
+      <Exists>
+        <Atom tableref="find_cp_5_nl0_ce0copy5_5">
+          <Var>a</Var>
+          <Var>b</Var>
+        </Atom>
+      </Exists>
+    </Mapping>
+    <Mapping id="M6">
+      <Uses>
+        <Correspondence ref="C25"/>
+        <Correspondence ref="C26"/>
+      </Uses>
+      <Foreach>
+        <Atom tableref="different_cp_6_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+        </Atom>
+      </Foreach>
+      <Exists>
+        <Atom tableref="different_cp_6_nl0_ce0copy6_6">
+          <Var>a</Var>
+          <Var>b</Var>
+        </Atom>
+      </Exists>
+    </Mapping>
+    <Mapping id="M7">
+      <Uses>
+        <Correspondence ref="C27"/>
+        <Correspondence ref="C28"/>
+      </Uses>
+      <Foreach>
+        <Atom tableref="narrow_cp_7_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+        </Atom>
+      </Foreach>
+      <Exists>
+        <Atom tableref="narrow_cp_7_nl0_ce0copy7_7">
+          <Var>a</Var>
+          <Var>b</Var>
+        </Atom>
+      </Exists>
+    </Mapping>
+    <Mapping id="M8">
+      <Uses>
+        <Correspondence ref="C29"/>
+        <Correspondence ref="C30"/>
+        <Correspondence ref="C31"/>
+      </Uses>
+      <Foreach>
+        <Atom tableref="expansion_cp_8_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+        </Atom>
+      </Foreach>
+      <Exists>
+        <Atom tableref="expansion_cp_8_nl0_ce0copy8_8">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+        </Atom>
+      </Exists>
+    </Mapping>
+    <Mapping id="M9">
+      <Uses>
+        <Correspondence ref="C32"/>
+        <Correspondence ref="C33"/>
+      </Uses>
+      <Foreach>
+        <Atom tableref="stick_cp_9_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+        </Atom>
+      </Foreach>
+      <Exists>
+        <Atom tableref="stick_cp_9_nl0_ce0copy9_9">
+          <Var>a</Var>
+          <Var>b</Var>
+        </Atom>
+      </Exists>
+    </Mapping>
+    <Mapping id="M10">
+      <Uses>
+        <Correspondence ref="C34"/>
+        <Correspondence ref="C35"/>
+        <Correspondence ref="C36"/>
+        <Correspondence ref="C37"/>
+        <Correspondence ref="C38"/>
+        <Correspondence ref="C39"/>
+        <Correspondence ref="C40"/>
+        <Correspondence ref="C41"/>
+        <Correspondence ref="C42"/>
+        <Correspondence ref="C43"/>
+      </Uses>
+      <Foreach>
+        <Atom tableref="future_me_0_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+          <Var>d</Var>
+        </Atom>
+        <Atom tableref="broken_me_0_nl0_ce1">
+          <Var>e</Var>
+          <Var>f</Var>
+          <Var>g</Var>
+          <Var>h</Var>
+          <Var>i</Var>
+          <Var>j</Var>
+          <Var>d</Var>
+        </Atom>
+      </Foreach>
+      <Exists>
+        <Atom tableref="division_me_0_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+          <Var>e</Var>
+          <Var>f</Var>
+          <Var>g</Var>
+          <Var>h</Var>
+          <Var>i</Var>
+          <Var>j</Var>
+          <Var>d</Var>
+        </Atom>
+      </Exists>
+    </Mapping>
+    <Mapping id="M11">
+      <Uses>
+        <Correspondence ref="C44"/>
+        <Correspondence ref="C45"/>
+        <Correspondence ref="C46"/>
+        <Correspondence ref="C47"/>
+        <Correspondence ref="C48"/>
+        <Correspondence ref="C49"/>
+        <Correspondence ref="C50"/>
+        <Correspondence ref="C51"/>
+        <Correspondence ref="C52"/>
+        <Correspondence ref="C53"/>
+        <Correspondence ref="C54"/>
+      </Uses>
+      <Foreach>
+        <Atom tableref="gun_me_1_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+          <Var>d</Var>
+          <Var>e</Var>
+          <Var>f</Var>
+          <Var>g</Var>
+        </Atom>
+        <Atom tableref="paint_me_1_nl0_ce1">
+          <Var>h</Var>
+          <Var>i</Var>
+          <Var>j</Var>
+          <Var>k</Var>
+          <Var>g</Var>
+        </Atom>
+      </Foreach>
+      <Exists>
+        <Atom tableref="knee_me_1_nl0_ce0">
+          <Var>a</Var>
+          <Var>b</Var>
+          <Var>c</Var>
+          <Var>d</Var>
+          <Var>e</Var>
+          <Var>f</Var>
+          <Var>h</Var>
+          <Var>i</Var>
+          <Var>j</Var>
+          <Var>k</Var>
+          <Var>g</Var>
+        </Atom>
+      </Exists>
+    </Mapping>
+  </Mappings>
+  <Transformations>
+    <Transformation id="T0" creates="test_cp_0_nl0_ce0copy0_0">
+      <Implements>
+        <Mapping ref="M0"/>
+      </Implements>
+      <Code>SELECT xl0v0.nut_cp_0_nl0_ae0ke0 AS nut_cp_0_nl0_ae0ke0, xl0v0.art_cp_0_nl0_ae1 AS art_cp_0_nl0_ae1, xl0v0.slope_cp_0_nl0_ae2 AS slope_cp_0_nl0_ae2, xl0v0.measure_cp_0_nl0_ae3 AS measure_cp_0_nl0_ae3, xl0v0.touch_cp_0_nl0_ae4 AS touch_cp_0_nl0_ae4
+FROM source.test_cp_0_nl0_ce0 AS xl0v0</Code>
+    </Transformation>
+    <Transformation id="T1" creates="cheese_cp_1_nl0_ce0copy1_1">
+      <Implements>
+        <Mapping ref="M1"/>
+      </Implements>
+      <Code>SELECT xl0v0.society_cp_1_nl0_ae0ke0 AS society_cp_1_nl0_ae0ke0, xl0v0.compare_cp_1_nl0_ae1 AS compare_cp_1_nl0_ae1, xl0v0.branch_cp_1_nl0_ae2 AS branch_cp_1_nl0_ae2, xl0v0.demand_cp_1_nl0_ae3 AS demand_cp_1_nl0_ae3
+FROM source.cheese_cp_1_nl0_ce0 AS xl0v0</Code>
+    </Transformation>
+    <Transformation id="T2" creates="great_cp_2_nl0_ce0copy2_2">
+      <Implements>
+        <Mapping ref="M2"/>
+      </Implements>
+      <Code>SELECT xl0v0.board_cp_2_nl0_ae0ke0 AS board_cp_2_nl0_ae0ke0, xl0v0.affect_cp_2_nl0_ae1 AS affect_cp_2_nl0_ae1
+FROM source.great_cp_2_nl0_ce0 AS xl0v0</Code>
+    </Transformation>
+    <Transformation id="T3" creates="different_cp_3_nl0_ce0copy3_3">
+      <Implements>
+        <Mapping ref="M3"/>
+      </Implements>
+      <Code>SELECT xl0v0.society_cp_3_nl0_ae0ke0 AS society_cp_3_nl0_ae0ke0, xl0v0.warn_cp_3_nl0_ae1 AS warn_cp_3_nl0_ae1, xl0v0.tail_cp_3_nl0_ae2 AS tail_cp_3_nl0_ae2, xl0v0.red_cp_3_nl0_ae3 AS red_cp_3_nl0_ae3, xl0v0.wrong_cp_3_nl0_ae4 AS wrong_cp_3_nl0_ae4, xl0v0.past_cp_3_nl0_ae5 AS past_cp_3_nl0_ae5, xl0v0.wheel_cp_3_nl0_ae6 AS wheel_cp_3_nl0_ae6
+FROM source.different_cp_3_nl0_ce0 AS xl0v0</Code>
+    </Transformation>
+    <Transformation id="T4" creates="work_cp_4_nl0_ce0copy4_4">
+      <Implements>
+        <Mapping ref="M4"/>
+      </Implements>
+      <Code>SELECT xl0v0.letter_cp_4_nl0_ae0ke0 AS letter_cp_4_nl0_ae0ke0, xl0v0.blue_cp_4_nl0_ae1 AS blue_cp_4_nl0_ae1, xl0v0.describe_cp_4_nl0_ae2 AS describe_cp_4_nl0_ae2, xl0v0.report_cp_4_nl0_ae3 AS report_cp_4_nl0_ae3, xl0v0.night_cp_4_nl0_ae4 AS night_cp_4_nl0_ae4
+FROM source.work_cp_4_nl0_ce0 AS xl0v0</Code>
+    </Transformation>
+    <Transformation id="T5" creates="find_cp_5_nl0_ce0copy5_5">
+      <Implements>
+        <Mapping ref="M5"/>
+      </Implements>
+      <Code>SELECT xl0v0.attention_cp_5_nl0_ae0ke0 AS attention_cp_5_nl0_ae0ke0, xl0v0.discover_cp_5_nl0_ae1 AS discover_cp_5_nl0_ae1
+FROM source.find_cp_5_nl0_ce0 AS xl0v0</Code>
+    </Transformation>
+    <Transformation id="T6" creates="different_cp_6_nl0_ce0copy6_6">
+      <Implements>
+        <Mapping ref="M6"/>
+      </Implements>
+      <Code>SELECT xl0v0.reveal_cp_6_nl0_ae0ke0 AS reveal_cp_6_nl0_ae0ke0, xl0v0.oven_cp_6_nl0_ae1 AS oven_cp_6_nl0_ae1
+FROM source.different_cp_6_nl0_ce0 AS xl0v0</Code>
+    </Transformation>
+    <Transformation id="T7" creates="narrow_cp_7_nl0_ce0copy7_7">
+      <Implements>
+        <Mapping ref="M7"/>
+      </Implements>
+      <Code>SELECT xl0v0.rest_cp_7_nl0_ae0ke0 AS rest_cp_7_nl0_ae0ke0, xl0v0.place_cp_7_nl0_ae1 AS place_cp_7_nl0_ae1
+FROM source.narrow_cp_7_nl0_ce0 AS xl0v0</Code>
+    </Transformation>
+    <Transformation id="T8" creates="expansion_cp_8_nl0_ce0copy8_8">
+      <Implements>
+        <Mapping ref="M8"/>
+      </Implements>
+      <Code>SELECT xl0v0.pipe_cp_8_nl0_ae0ke0 AS pipe_cp_8_nl0_ae0ke0, xl0v0.indicate_cp_8_nl0_ae1 AS indicate_cp_8_nl0_ae1, xl0v0.thank_cp_8_nl0_ae2 AS thank_cp_8_nl0_ae2
+FROM source.expansion_cp_8_nl0_ce0 AS xl0v0</Code>
+    </Transformation>
+    <Transformation id="T9" creates="stick_cp_9_nl0_ce0copy9_9">
+      <Implements>
+        <Mapping ref="M9"/>
+      </Implements>
+      <Code>SELECT xl0v0.order_cp_9_nl0_ae0ke0 AS order_cp_9_nl0_ae0ke0, xl0v0.twist_cp_9_nl0_ae1 AS twist_cp_9_nl0_ae1
+FROM source.stick_cp_9_nl0_ce0 AS xl0v0</Code>
+    </Transformation>
+    <Transformation id="T10" creates="division_me_0_nl0_ce0">
+      <Implements>
+        <Mapping ref="M10"/>
+      </Implements>
+      <Code>SELECT x0.chin_me_0_nl0_ae0 AS chin_me_0_nl0_ae0, x0.mixed_me_0_nl0_ae1 AS mixed_me_0_nl0_ae1, x0.small_me_0_nl0_ae2 AS small_me_0_nl0_ae2, x1.brain_me_0_nl1_ae0 AS brain_me_0_nl1_ae0, x1.branch_me_0_nl1_ae1 AS branch_me_0_nl1_ae1, x1.swim_me_0_nl1_ae2 AS swim_me_0_nl1_ae2, x1.place_me_0_nl1_ae3 AS place_me_0_nl1_ae3, x1.approval_me_0_nl1_ae4 AS approval_me_0_nl1_ae4, x1.blow_me_0_nl1_ae5 AS blow_me_0_nl1_ae5, x1.account_me_0_nl0_ae0comp1_joinattr_0 AS account_me_0_nl0_ae0comp1_joinattr_0
+FROM source.future_me_0_nl0_ce0 AS x0, source.broken_me_0_nl0_ce1 AS x1
+WHERE x0.account_me_0_nl0_ae0comp1_joinref_0=x1.account_me_0_nl0_ae0comp1_joinattr_0</Code>
+    </Transformation>
+    <Transformation id="T11" creates="knee_me_1_nl0_ce0">
+      <Implements>
+        <Mapping ref="M11"/>
+      </Implements>
+      <Code>SELECT x0.winter_me_1_nl0_ae0 AS winter_me_1_nl0_ae0, x0.powder_me_1_nl0_ae1 AS powder_me_1_nl0_ae1, x0.work_me_1_nl0_ae2 AS work_me_1_nl0_ae2, x0.discuss_me_1_nl0_ae3 AS discuss_me_1_nl0_ae3, x0.involve_me_1_nl0_ae4 AS involve_me_1_nl0_ae4, x0.use_me_1_nl0_ae5 AS use_me_1_nl0_ae5, x1.dead_me_1_nl1_ae0 AS dead_me_1_nl1_ae0, x1.draw_me_1_nl1_ae1 AS draw_me_1_nl1_ae1, x1.send_me_1_nl1_ae2 AS send_me_1_nl1_ae2, x1.regular_me_1_nl1_ae3 AS regular_me_1_nl1_ae3, x1.property_me_1_nl0_ae0comp1_joinattr_0 AS property_me_1_nl0_ae0comp1_joinattr_0
+FROM source.gun_me_1_nl0_ce0 AS x0, source.paint_me_1_nl0_ce1 AS x1
+WHERE x0.property_me_1_nl0_ae0comp1_joinref_0=x1.property_me_1_nl0_ae0comp1_joinattr_0</Code>
+    </Transformation>
+  </Transformations>
+  <Data>
+    <InstanceFile name="test_cp_0_nl0_ce0">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>test_cp_0_nl0_ce0.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+    <InstanceFile name="cheese_cp_1_nl0_ce0">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>cheese_cp_1_nl0_ce0.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+    <InstanceFile name="great_cp_2_nl0_ce0">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>great_cp_2_nl0_ce0.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+    <InstanceFile name="different_cp_3_nl0_ce0">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>different_cp_3_nl0_ce0.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+    <InstanceFile name="work_cp_4_nl0_ce0">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>work_cp_4_nl0_ce0.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+    <InstanceFile name="find_cp_5_nl0_ce0">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>find_cp_5_nl0_ce0.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+    <InstanceFile name="different_cp_6_nl0_ce0">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>different_cp_6_nl0_ce0.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+    <InstanceFile name="narrow_cp_7_nl0_ce0">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>narrow_cp_7_nl0_ce0.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+    <InstanceFile name="expansion_cp_8_nl0_ce0">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>expansion_cp_8_nl0_ce0.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+    <InstanceFile name="stick_cp_9_nl0_ce0">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>stick_cp_9_nl0_ce0.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+    <InstanceFile name="future_me_0_nl0_ce0">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>future_me_0_nl0_ce0.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+    <InstanceFile name="broken_me_0_nl0_ce1">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>broken_me_0_nl0_ce1.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+    <InstanceFile name="gun_me_1_nl0_ce0">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>gun_me_1_nl0_ce0.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+    <InstanceFile name="paint_me_1_nl0_ce1">
+      <Path>C:\Users\Francesca-Tassatone\Desktop\uni\MAGISTRALE\FDS\progetto\ibench-master\build\ibench\personConf</Path>
+      <FileName>paint_me_1_nl0_ce1.csv</FileName>
+      <ColumnDelim>|</ColumnDelim>
+    </InstanceFile>
+  </Data>
+</xm:MappingScenario>
