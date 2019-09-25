@@ -7,14 +7,14 @@
 ################################################################################
 
 # Output Path Prefixes
-SchemaPathPrefix=sc1
-InstancePathPrefix=sc1
+SchemaPathPrefix=sc3
+InstancePathPrefix=sc3
 
 # Schema file Name
 FileNames.Schemas=metadata.xml
 
 # Number of Instances for each Basic Scenario Type
-Scenarios.COPY = 400
+Scenarios.COPY = 490
 
 ################################################################################
 # UDTs
@@ -50,12 +50,12 @@ DataType.4.DBType = TEXT
 # Additional configuration
 
 # Number of attributes
-ConfigOptions.NumOfSubElements = 7
+ConfigOptions.NumOfSubElements = 10
 # Deviation of attributes for each relation
 ConfigOptionsDeviation.NumOfSubElements = 3
 
 RandomSeed = 3
-RepElementCount = 200
+RepElementCount = 140
 MaxStringLength = 100
 MaxNumValue = 1000
 DataGenerator = TrampCSV
@@ -63,9 +63,9 @@ QueryGenerator = Postgres
 MappingLanguage = FOtgds
 ExchangeTargetData = false
 
-ConfigOptions.SourceInclusionDependencyPerc = 50 
+ConfigOptions.SourceInclusionDependencyPerc = 80 
 ConfigOptions.SourceInclusionDependencyFKPerc = 50	
-ConfigOptions.TargetInclusionDependencyPerc = 50		
+ConfigOptions.TargetInclusionDependencyPerc = 80		
 ConfigOptions.TargetInclusionDependencyFKPerc = 50
 
 ################################################################################
