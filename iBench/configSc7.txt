@@ -7,14 +7,14 @@
 ################################################################################
 
 # Output Path Prefixes
-SchemaPathPrefix=sc6
-InstancePathPrefix=sc6
+SchemaPathPrefix=sc7
+InstancePathPrefix=sc7
 
 # Schema file Name
 FileNames.Schemas=metadata.xml
 
 # Number of Instances for each Basic Scenario Type
-Scenarios.COPY = 70
+Scenarios.COPY = 20
 
 ##################################################################################################################
 
@@ -26,7 +26,7 @@ ConfigOptions.NumOfSubElements = 10
 ConfigOptionsDeviation.NumOfSubElements = 3
 
 RandomSeed = 3
-RepElementCount = 200
+RepElementCount = 100
 MaxStringLength = 100
 MaxNumValue = 1000
 DataGenerator = TrampCSV
@@ -39,8 +39,8 @@ ConfigOptions.SourceInclusionDependencyFKPerc = 50
 ConfigOptions.TargetInclusionDependencyPerc = 50		
 ConfigOptions.TargetInclusionDependencyFKPerc = 50
 
-# Combination of ADDATTRIBUTE and DELATTRIBUTE
-Scenarios.ADDDELATTRIBUTE = 5
+# Vertically partition a source relation
+Scenarios.VERTPARTITION = 10
 
 ################################################################################
 # Optional activation/deactivation of output options
