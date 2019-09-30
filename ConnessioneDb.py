@@ -50,16 +50,37 @@ def creaDb(tipoSchema):
             nAttr=nAttr+1
 
         table = table[:-1]
-        table += ')'
+
+        # Aggiungo la PK
+        pk = root.findall("./Schemas/" + tipoSchema + "/*[@name='" + nameEn + "']/PrimaryKey")
+        if(pk is not None):
+            table += ", PRIMARY KEY (" + pk[0].find("Attr").text + ")"
+        table += ');'
         mycursor.execute(table)
-        caricaDati(mycursor, inizioPath, nameEn, nAttr)
+        if(tipoSchema == "Source"):
+            caricaDati(mycursor, inizioPath, nameEn, nAttr)
         mydb.commit()
 
+    # Aggiungo le chiavi esterne alle tabelle
+    mycursor = mydb.cursor()
+    query = ""
+    fks = root.findall("./Schemas/" + tipoSchema + "/ForeignKey")
+    for f in fks:
+        # Tabella from
+        t1 = f.find("From").get("tableref")
+        # Campo from
+        e1 = f.find("From/Attr").text
+        # Tabella to
+        t2 = f.find("To").get("tableref")
+        # Campo to
+        e2 = f.find("To/Attr").text
+        query = "ALTER TABLE " + t1 + " ADD FOREIGN KEY (" + e1 + ") REFERENCES " + t2 + "(" + e2 + ");"
+        mycursor.execute(query)
+    mydb.commit()
+
 def caricaDati(cursor, path, nomeEntita, numeroAttributi):
-    '''TODO caricare dati
-        Esiste un csv per ogni entità
-        Controllare se per il target esiste un csv
-        Valutare se creare una cartella a parte stesso da ibench
+    '''
+        NOTA: Esiste un csv per ogni entità
     '''
     queryRiga = ""
     with open(path + nomeEntita + ".csv", 'r') as csvfile:
@@ -74,7 +95,7 @@ def caricaDati(cursor, path, nomeEntita, numeroAttributi):
                 # Il primo è il numero della riga di excel
                 if(v==0):continue
                 # Concateno il valore della cella
-                queryRiga += "'" + vals[v] + "',"
+                queryRiga += "'" + vals[v].replace("'"," ") + "',"
                 attributiDaInserire = attributiDaInserire-1
             # Tolgo l'ultima virgola
             queryRiga = queryRiga[:-1]
