@@ -2,124 +2,124 @@
 <packageImport xmi:type="uml:PackageImport" xmi:id="_XrSbEdk5EdyEZoPpUv3LUw">
 <importedPackage xmi:type="uml:Model" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#_0"/>
 </packageImport>
-<packagedElement xmi:type="uml:Class" xmi:id="test_cp_0_nl0_ce0" name="test_cp_0_nl0_ce0" x="201" y="468">
+<packagedElement xmi:type="uml:Class" xmi:id="test_cp_0_nl0_ce0" name="test_cp_0_nl0_ce0" x="234" y="298">
  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="activityEAnnotation" source="http://www.eclipse.org/uml2/2.0.0/UML">
  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="phpbb_f_Entity" key="Entity"/>
   </eAnnotations>
   </xmi:Extension>
-<ownedAttribute xmi:type="uml:Property" xmi:id="nut_cp_0_nl0_ae0ke0" name="nut_cp_0_nl0_ae0ke0" visibility="private" x="76" y="380">
+<ownedAttribute xmi:type="uml:Property" xmi:id="nut_cp_0_nl0_ae0ke0" name="nut_cp_0_nl0_ae0ke0" visibility="private" x="33" y="232">
 <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
 <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ovi-VuPdEdy8F_b8rGg0Zw" source="http://www.eclipse.org/uml2/2.0.0/UML">
 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ovi-V-PdEdy8F_b8rGg0Zw" key="PK"/>
  </eAnnotations>
  </xmi:Extension>
      </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="art_cp_0_nl0_ae1" name="art_cp_0_nl0_ae1" visibility="private" x="357" y="609" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="art_cp_0_nl0_ae1" name="art_cp_0_nl0_ae1" visibility="private" x="333" y="417" >
       </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="slope_cp_0_nl0_ae2" name="slope_cp_0_nl0_ae2" visibility="private" x="320" y="331" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="slope_cp_0_nl0_ae2" name="slope_cp_0_nl0_ae2" visibility="private" x="195" y="133" >
       </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="measure_cp_0_nl0_ae3" name="measure_cp_0_nl0_ae3" visibility="private" x="415" y="517" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="measure_cp_0_nl0_ae3" name="measure_cp_0_nl0_ae3" visibility="private" x="364" y="204" >
       </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="touch_cp_0_nl0_ae4" name="touch_cp_0_nl0_ae4" visibility="private" x="59" y="567" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="touch_cp_0_nl0_ae4" name="touch_cp_0_nl0_ae4" visibility="private" x="70" y="408" >
       </ownedAttribute>
 </packagedElement>
-<packagedElement xmi:type="uml:Class" xmi:id="cheese_cp_1_nl0_ce0" name="cheese_cp_1_nl0_ce0" x="1715" y="1129">
+<packagedElement xmi:type="uml:Class" xmi:id="cheese_cp_1_nl0_ce0" name="cheese_cp_1_nl0_ce0" x="1053" y="1336">
  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="activityEAnnotation" source="http://www.eclipse.org/uml2/2.0.0/UML">
  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="phpbb_f_Entity" key="Entity"/>
   </eAnnotations>
   </xmi:Extension>
-<ownedAttribute xmi:type="uml:Property" xmi:id="society_cp_1_nl0_ae0ke0" name="society_cp_1_nl0_ae0ke0" visibility="private" x="1844" y="1041">
+<ownedAttribute xmi:type="uml:Property" xmi:id="society_cp_1_nl0_ae0ke0" name="society_cp_1_nl0_ae0ke0" visibility="private" x="782" y="1418">
 <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
 <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ovi-VuPdEdy8F_b8rGg0Zw" source="http://www.eclipse.org/uml2/2.0.0/UML">
 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ovi-V-PdEdy8F_b8rGg0Zw" key="PK"/>
  </eAnnotations>
  </xmi:Extension>
      </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="compare_cp_1_nl0_ae1" name="compare_cp_1_nl0_ae1" visibility="private" x="1807" y="1239" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="compare_cp_1_nl0_ae1" name="compare_cp_1_nl0_ae1" visibility="private" x="1219" y="1413" >
       </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="branch_cp_1_nl0_ae2" name="branch_cp_1_nl0_ae2" visibility="private" x="1592" y="1051" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="branch_cp_1_nl0_ae2" name="branch_cp_1_nl0_ae2" visibility="private" x="848" y="1271" >
       </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="demand_cp_1_nl0_ae3" name="demand_cp_1_nl0_ae3" visibility="private" x="1568" y="1217" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="demand_cp_1_nl0_ae3" name="demand_cp_1_nl0_ae3" visibility="private" x="1220" y="1256" >
       </ownedAttribute>
 </packagedElement>
-<packagedElement xmi:type="uml:Class" xmi:id="great_vp_0_nl0_ce0" name="great_vp_0_nl0_ce0" x="1846" y="303">
+<packagedElement xmi:type="uml:Class" xmi:id="great_vp_0_nl0_ce0" name="great_vp_0_nl0_ce0" x="1062" y="783">
  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="activityEAnnotation" source="http://www.eclipse.org/uml2/2.0.0/UML">
  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="phpbb_f_Entity" key="Entity"/>
   </eAnnotations>
   </xmi:Extension>
-<ownedAttribute xmi:type="uml:Property" xmi:id="board_vp_0_nl0_ae0ke0" name="board_vp_0_nl0_ae0ke0" visibility="private" x="1863" y="205">
+<ownedAttribute xmi:type="uml:Property" xmi:id="board_vp_0_nl0_ae0ke0" name="board_vp_0_nl0_ae0ke0" visibility="private" x="828" y="721">
 <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
 <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ovi-VuPdEdy8F_b8rGg0Zw" source="http://www.eclipse.org/uml2/2.0.0/UML">
 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ovi-V-PdEdy8F_b8rGg0Zw" key="PK"/>
  </eAnnotations>
  </xmi:Extension>
      </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="different_vp_0_nl0_ae1" name="different_vp_0_nl0_ae1" visibility="private" x="1954" y="390" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="different_vp_0_nl0_ae1" name="different_vp_0_nl0_ae1" visibility="private" x="1271" y="793" >
       </ownedAttribute>
 </packagedElement>
-<packagedElement xmi:type="uml:Class" xmi:id="red_vp_1_nl0_ce0" name="red_vp_1_nl0_ce0" x="174" y="1201">
+<packagedElement xmi:type="uml:Class" xmi:id="red_vp_1_nl0_ce0" name="red_vp_1_nl0_ce0" x="218" y="1014">
  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="activityEAnnotation" source="http://www.eclipse.org/uml2/2.0.0/UML">
  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="phpbb_f_Entity" key="Entity"/>
   </eAnnotations>
   </xmi:Extension>
-<ownedAttribute xmi:type="uml:Property" xmi:id="wrong_vp_1_nl0_ae0ke0" name="wrong_vp_1_nl0_ae0ke0" visibility="private" x="140" y="1389">
+<ownedAttribute xmi:type="uml:Property" xmi:id="wrong_vp_1_nl0_ae0ke0" name="wrong_vp_1_nl0_ae0ke0" visibility="private" x="111" y="1195">
 <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
 <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ovi-VuPdEdy8F_b8rGg0Zw" source="http://www.eclipse.org/uml2/2.0.0/UML">
 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ovi-V-PdEdy8F_b8rGg0Zw" key="PK"/>
  </eAnnotations>
  </xmi:Extension>
      </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="wheel_vp_1_nl0_ae1" name="wheel_vp_1_nl0_ae1" visibility="private" x="26" y="1302" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="wheel_vp_1_nl0_ae1" name="wheel_vp_1_nl0_ae1" visibility="private" x="33" y="1085" >
       </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="work_vp_1_nl0_ae2" name="work_vp_1_nl0_ae2" visibility="private" x="308" y="1082" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="work_vp_1_nl0_ae2" name="work_vp_1_nl0_ae2" visibility="private" x="333" y="926" >
       </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="letter_vp_1_nl0_ae3" name="letter_vp_1_nl0_ae3" visibility="private" x="372" y="1199" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="letter_vp_1_nl0_ae3" name="letter_vp_1_nl0_ae3" visibility="private" x="429" y="1051" >
       </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="blue_vp_1_nl0_ae4" name="blue_vp_1_nl0_ae4" visibility="private" x="57" y="1124" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="blue_vp_1_nl0_ae4" name="blue_vp_1_nl0_ae4" visibility="private" x="88" y="919" >
       </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="describe_vp_1_nl0_ae5" name="describe_vp_1_nl0_ae5" visibility="private" x="296" y="1296" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="describe_vp_1_nl0_ae5" name="describe_vp_1_nl0_ae5" visibility="private" x="315" y="1131" >
       </ownedAttribute>
 </packagedElement>
-<packagedElement xmi:type="uml:Class" xmi:id="attention_vp_2_nl0_ce0" name="attention_vp_2_nl0_ce0" x="1057" y="307">
+<packagedElement xmi:type="uml:Class" xmi:id="attention_vp_2_nl0_ce0" name="attention_vp_2_nl0_ce0" x="1072" y="312">
  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="activityEAnnotation" source="http://www.eclipse.org/uml2/2.0.0/UML">
  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="phpbb_f_Entity" key="Entity"/>
   </eAnnotations>
   </xmi:Extension>
-<ownedAttribute xmi:type="uml:Property" xmi:id="discover_vp_2_nl0_ae0ke0" name="discover_vp_2_nl0_ae0ke0" visibility="private" x="1028" y="218">
+<ownedAttribute xmi:type="uml:Property" xmi:id="discover_vp_2_nl0_ae0ke0" name="discover_vp_2_nl0_ae0ke0" visibility="private" x="1034" y="221">
 <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
 <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ovi-VuPdEdy8F_b8rGg0Zw" source="http://www.eclipse.org/uml2/2.0.0/UML">
 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ovi-V-PdEdy8F_b8rGg0Zw" key="PK"/>
  </eAnnotations>
  </xmi:Extension>
      </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="reveal_vp_2_nl0_ae1" name="reveal_vp_2_nl0_ae1" visibility="private" x="1058" y="428" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="reveal_vp_2_nl0_ae1" name="reveal_vp_2_nl0_ae1" visibility="private" x="1306" y="306" >
       </ownedAttribute>
 </packagedElement>
-<packagedElement xmi:type="uml:Class" xmi:id="place_vp_3_nl0_ce0" name="place_vp_3_nl0_ce0" x="766" y="923">
+<packagedElement xmi:type="uml:Class" xmi:id="place_vp_3_nl0_ce0" name="place_vp_3_nl0_ce0" x="1739" y="614">
  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="activityEAnnotation" source="http://www.eclipse.org/uml2/2.0.0/UML">
  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="phpbb_f_Entity" key="Entity"/>
   </eAnnotations>
   </xmi:Extension>
-<ownedAttribute xmi:type="uml:Property" xmi:id="expansion_vp_3_nl0_ae0ke0" name="expansion_vp_3_nl0_ae0ke0" visibility="private" x="748" y="832">
+<ownedAttribute xmi:type="uml:Property" xmi:id="expansion_vp_3_nl0_ae0ke0" name="expansion_vp_3_nl0_ae0ke0" visibility="private" x="1659" y="735">
 <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
 <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ovi-VuPdEdy8F_b8rGg0Zw" source="http://www.eclipse.org/uml2/2.0.0/UML">
 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ovi-V-PdEdy8F_b8rGg0Zw" key="PK"/>
  </eAnnotations>
  </xmi:Extension>
      </ownedAttribute>
-<ownedAttribute xmi:type="uml:Property" xmi:id="indicate_vp_3_nl0_ae1" name="indicate_vp_3_nl0_ae1" visibility="private" x="651" y="1019" >
+<ownedAttribute xmi:type="uml:Property" xmi:id="indicate_vp_3_nl0_ae1" name="indicate_vp_3_nl0_ae1" visibility="private" x="1716" y="524" >
       </ownedAttribute>
 </packagedElement>
-<packagedElement xmi:type="uml:Association" xmi:id="great_vp_0_nl0_ce0__attention_vp_2_nl0_ce0__great_vp_0_nl0_ce0/attention_vp_2_nl0_ce0__id" x="1351"  y="286" />
-<packagedElement xmi:type="uml:Association" xmi:id="attention_vp_2_nl0_ce0__test_cp_0_nl0_ce0__attention_vp_2_nl0_ce0/test_cp_0_nl0_ce0__id" x="566"  y="378" />
-<packagedElement xmi:type="uml:Association" xmi:id="red_vp_1_nl0_ce0__test_cp_0_nl0_ce0__red_vp_1_nl0_ce0/test_cp_0_nl0_ce0__id" x="81"  y="818" />
-<packagedElement xmi:type="uml:Association" xmi:id="cheese_cp_1_nl0_ce0__great_vp_0_nl0_ce0__cheese_cp_1_nl0_ce0/great_vp_0_nl0_ce0__id" x="1654"  y="743" />
+<packagedElement xmi:type="uml:Association" xmi:id="great_vp_0_nl0_ce0__attention_vp_2_nl0_ce0__great_vp_0_nl0_ce0/attention_vp_2_nl0_ce0__id" x="938"  y="508" />
+<packagedElement xmi:type="uml:Association" xmi:id="attention_vp_2_nl0_ce0__test_cp_0_nl0_ce0__attention_vp_2_nl0_ce0/test_cp_0_nl0_ce0__id" x="553"  y="300" />
+<packagedElement xmi:type="uml:Association" xmi:id="red_vp_1_nl0_ce0__test_cp_0_nl0_ce0__red_vp_1_nl0_ce0/test_cp_0_nl0_ce0__id" x="130"  y="663" />
+<packagedElement xmi:type="uml:Association" xmi:id="cheese_cp_1_nl0_ce0__great_vp_0_nl0_ce0__cheese_cp_1_nl0_ce0/great_vp_0_nl0_ce0__id" x="939"  y="1019" />
 <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XrSbHdk5EdyEZoPpUv3LUw">
 <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XrSbHtk5EdyEZoPpUv3LUw" source="http://www.eclipse.org/uml2/2.0.0/UML">
