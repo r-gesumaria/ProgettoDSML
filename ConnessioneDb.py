@@ -27,9 +27,9 @@ def creaDb(tipoSchema):
     table = ""
     # Recupero la parte iniziale
     path = sys.argv[1]
-    path = path.split("/")
+    path = path.split("\\")
     inizioPath = sys.argv[1]
-    inizioPath = inizioPath[:len(sys.argv[1])-len(path[-1])]
+    inizioPath = inizioPath[:(sys.argv[1].__len__() - path[-1].__len__())]
 
     # Connessione al db appena creato e generazione delle tabelle con attributi
     mydb = creaConnessione(nomeDb)
@@ -57,7 +57,7 @@ def creaDb(tipoSchema):
             table += ", PRIMARY KEY (" + pk[0].find("Attr").text + ")"
         table += ');'
         mycursor.execute(table)
-        if(tipoSchema == "Source"):
+        if(tipoSchema == "SourceSchema"):
             caricaDati(mycursor, inizioPath, nameEn, nAttr)
         mydb.commit()
 
