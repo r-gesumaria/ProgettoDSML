@@ -14,7 +14,7 @@ InstancePathPrefix=schemaMerge
 FileNames.Schemas=metadata.xml
 
 # Number of Instances for each Basic Scenario Type
-Scenarios.COPY = 2
+Scenarios.COPY = 4
 
 ##################################################################################################################
 
