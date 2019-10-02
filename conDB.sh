@@ -1,0 +1,1 @@
+python3 ./ConnessioneDB.py $1 $2
