@@ -21,7 +21,9 @@ def creaDb(tipoSchema):
     mycursor.execute("DROP DATABASE IF EXISTS `" + nomeDb + "`;")
     mydb.commit()
     mycursor.execute("CREATE DATABASE " + nomeDb)
-    mydb.close
+    mycursor.execute("SET GLOBAL FOREIGN_KEY_CHECKS=0;")
+    mydb.commit()
+    mydb.close()
 
     tree = ET.parse(sys.argv[1])
     root = tree.getroot()
@@ -31,8 +33,6 @@ def creaDb(tipoSchema):
     nomeFile = path.split(os.sep)[-1]
     inizioPath = sys.argv[1]
     inizioPath = inizioPath[:(sys.argv[1].__len__() - nomeFile.__len__())]
-    print(inizioPath)
-    print(nomeFile)
 
     # Connessione al db appena creato e generazione delle tabelle con attributi
     mydb = creaConnessione(nomeDb)
@@ -80,6 +80,10 @@ def creaDb(tipoSchema):
         query = "ALTER TABLE " + t1 + " ADD FOREIGN KEY (" + e1 + ") REFERENCES " + t2 + "(" + e2 + ");"
         mycursor.execute(query)
     mydb.commit()
+    # Setto di nuovo il check delle chiavi esterne
+    mycursor.execute("SET GLOBAL FOREIGN_KEY_CHECKS=1;")
+    mydb.commit()
+    mydb.close()
 
 def caricaDati(cursor, path, nomeEntita, numeroAttributi):
     '''
