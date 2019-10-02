@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 import mysql.connector
 import sys
 import csv
+import os
 
 def creaConnessione(nomeDB):
     return mysql.connector.connect(
@@ -26,10 +27,12 @@ def creaDb(tipoSchema):
     root = tree.getroot()
     table = ""
     # Recupero la parte iniziale
-    path = sys.argv[1]
-    path = path.split("\\")
+    path = os.path.normpath(sys.argv[1])
+    nomeFile = path.split(os.sep)[-1]
     inizioPath = sys.argv[1]
-    inizioPath = inizioPath[:(sys.argv[1].__len__() - path[-1].__len__())]
+    inizioPath = inizioPath[:(sys.argv[1].__len__() - nomeFile.__len__())]
+    print(inizioPath)
+    print(nomeFile)
 
     # Connessione al db appena creato e generazione delle tabelle con attributi
     mydb = creaConnessione(nomeDb)
