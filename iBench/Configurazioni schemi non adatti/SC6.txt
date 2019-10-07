@@ -1,20 +1,66 @@
 ################################################################################
 # iBench configuration file
-#
-# Example with user defined data types (UDTs), create 1 copy primitives and use
-# 4 user defined data types for its 30 attributes
-#
 ################################################################################
 
 # Output Path Prefixes
-SchemaPathPrefix=sc3
-InstancePathPrefix=sc3
+SchemaPathPrefix=sc6
+InstancePathPrefix=sc6
 
 # Schema file Name
 FileNames.Schemas=metadata.xml
 
 # Number of Instances for each Basic Scenario Type
-Scenarios.COPY = 490
+Scenarios.COPY = 70
+
+##################################################################################################################
+
+# Additional configuration
+
+# Number of attributes
+ConfigOptions.NumOfSubElements = 10
+# Deviation of attributes for each relation
+ConfigOptionsDeviation.NumOfSubElements = 3
+
+RandomSeed = 3
+RepElementCount = 200
+MaxStringLength = 100
+MaxNumValue = 1000
+DataGenerator = TrampCSV
+QueryGenerator = Postgres
+MappingLanguage = FOtgds
+ExchangeTargetData = false
+
+ConfigOptions.SourceInclusionDependencyPerc = 50 
+ConfigOptions.SourceInclusionDependencyFKPerc = 50
+ConfigOptions.TargetInclusionDependencyPerc = 50		
+ConfigOptions.TargetInclusionDependencyFKPerc = 50
+
+# Combination of ADDATTRIBUTE and DELATTRIBUTE
+Scenarios.ADDDELATTRIBUTE = 5
+
+################################################################################
+# Optional activation/deactivation of output options
+# create only TrampXML metadata file and data
+################################################################################ 
+
+OutputOption.HTMLSchemas = false
+OutputOption.Data = true
+OutputOption.EnableTargetData = false
+#TargetTableNumRows = 100
+OutputOption.XMLSchemas = true
+OutputOption.HTMLMapping = false
+OutputOption.TrampXML = true			
+OutputOption.Clio = false				
+
+################################################################################
+# Optional activation/deactivation of parts of the generated Tramp XML document
+################################################################################
+
+TrampXMLOutput.Correspondences = true
+TrampXMLOutput.Transformations = true
+TrampXMLOutput.Data = true
+TrampXMLOutput.ConnectionInfo = false
+TrampXMLOutput.FDs = false
 
 ################################################################################
 # UDTs
@@ -45,49 +91,3 @@ DataType.4.Name = Cities
 DataType.4.ClassPath = toxgene.util.cdata.xmark.Cities
 DataType.4.Percentage = 20.0
 DataType.4.DBType = TEXT
-##################################################################################################################
-
-# Additional configuration
-
-# Number of attributes
-ConfigOptions.NumOfSubElements = 10
-# Deviation of attributes for each relation
-ConfigOptionsDeviation.NumOfSubElements = 3
-
-RandomSeed = 3
-RepElementCount = 140
-MaxStringLength = 100
-MaxNumValue = 1000
-DataGenerator = TrampCSV
-QueryGenerator = Postgres
-MappingLanguage = FOtgds
-ExchangeTargetData = false
-
-ConfigOptions.SourceInclusionDependencyPerc = 80 
-ConfigOptions.SourceInclusionDependencyFKPerc = 50	
-ConfigOptions.TargetInclusionDependencyPerc = 80		
-ConfigOptions.TargetInclusionDependencyFKPerc = 50
-
-################################################################################
-# Optional activation/deactivation of output options
-# create only TrampXML metadata file and data
-################################################################################ 
-
-OutputOption.HTMLSchemas = false
-OutputOption.Data = true
-OutputOption.EnableTargetData = false
-#TargetTableNumRows = 100
-OutputOption.XMLSchemas = true
-OutputOption.HTMLMapping = false
-OutputOption.TrampXML = true			
-OutputOption.Clio = false				
-
-################################################################################
-# Optional activation/deactivation of parts of the generated Tramp XML document
-################################################################################
-
-TrampXMLOutput.Correspondences = true
-TrampXMLOutput.Transformations = true
-TrampXMLOutput.Data = true
-TrampXMLOutput.ConnectionInfo = false
-TrampXMLOutput.FDs = false	  			

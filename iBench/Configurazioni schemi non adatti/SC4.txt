@@ -1,32 +1,28 @@
 ################################################################################
 # iBench configuration file
-#
-# Example with user defined data types (UDTs), create 1 copy primitives and use
-# 4 user defined data types for its 30 attributes
-#
 ################################################################################
 
 # Output Path Prefixes
-SchemaPathPrefix=sc6
-InstancePathPrefix=sc6
+SchemaPathPrefix=sc4
+InstancePathPrefix=sc4
 
 # Schema file Name
 FileNames.Schemas=metadata.xml
 
 # Number of Instances for each Basic Scenario Type
-Scenarios.COPY = 70
+Scenarios.COPY = 50
 
 ##################################################################################################################
 
 # Additional configuration
 
 # Number of attributes
-ConfigOptions.NumOfSubElements = 10
+ConfigOptions.NumOfSubElements = 5
 # Deviation of attributes for each relation
 ConfigOptionsDeviation.NumOfSubElements = 3
 
 RandomSeed = 3
-RepElementCount = 200
+RepElementCount = 50
 MaxStringLength = 100
 MaxNumValue = 1000
 DataGenerator = TrampCSV
@@ -34,13 +30,10 @@ QueryGenerator = Postgres
 MappingLanguage = FOtgds
 ExchangeTargetData = false
 
-ConfigOptions.SourceInclusionDependencyPerc = 50 
-ConfigOptions.SourceInclusionDependencyFKPerc = 50	
-ConfigOptions.TargetInclusionDependencyPerc = 50		
+ConfigOptions.SourceInclusionDependencyPerc = 100 
+ConfigOptions.SourceInclusionDependencyFKPerc = 50
+ConfigOptions.TargetInclusionDependencyPerc = 100		
 ConfigOptions.TargetInclusionDependencyFKPerc = 50
-
-# Combination of ADDATTRIBUTE and DELATTRIBUTE
-Scenarios.ADDDELATTRIBUTE = 5
 
 ################################################################################
 # Optional activation/deactivation of output options

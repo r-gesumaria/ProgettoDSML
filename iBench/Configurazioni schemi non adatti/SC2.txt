@@ -1,32 +1,28 @@
 ################################################################################
 # iBench configuration file
-#
-# Example with user defined data types (UDTs), create 1 copy primitives and use
-# 4 user defined data types for its 30 attributes
-#
 ################################################################################
 
 # Output Path Prefixes
-SchemaPathPrefix=schema7_1
-InstancePathPrefix=schema7_1
+SchemaPathPrefix=sc2
+InstancePathPrefix=sc2
 
 # Schema file Name
 FileNames.Schemas=metadata.xml
 
 # Number of Instances for each Basic Scenario Type
-Scenarios.COPY = 7
+Scenarios.COPY = 470
 
 ##################################################################################################################
 
 # Additional configuration
 
 # Number of attributes
-ConfigOptions.NumOfSubElements = 5
+ConfigOptions.NumOfSubElements = 9
 # Deviation of attributes for each relation
 ConfigOptionsDeviation.NumOfSubElements = 2
 
 RandomSeed = 3
-RepElementCount = 100
+RepElementCount = 150
 MaxStringLength = 100
 MaxNumValue = 1000
 DataGenerator = TrampCSV
@@ -34,13 +30,10 @@ QueryGenerator = Postgres
 MappingLanguage = FOtgds
 ExchangeTargetData = false
 
-ConfigOptions.SourceInclusionDependencyPerc = 100 
-ConfigOptions.SourceInclusionDependencyFKPerc = 95
-ConfigOptions.TargetInclusionDependencyPerc = 100		
-ConfigOptions.TargetInclusionDependencyFKPerc = 95
-
-# Vertically partition a source relation
-Scenarios.VERTPARTITION = 4
+ConfigOptions.SourceInclusionDependencyPerc = 80 
+ConfigOptions.SourceInclusionDependencyFKPerc = 50
+ConfigOptions.TargetInclusionDependencyPerc = 80		
+ConfigOptions.TargetInclusionDependencyFKPerc = 50
 
 ################################################################################
 # Optional activation/deactivation of output options

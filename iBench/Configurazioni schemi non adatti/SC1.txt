@@ -1,32 +1,28 @@
 ################################################################################
-# iBench configuration file
-#
-# Example with user defined data types (UDTs), create 1 copy primitives and use
-# 4 user defined data types for its 30 attributes
-#
+# iBench configuration file#
 ################################################################################
 
 # Output Path Prefixes
-SchemaPathPrefix=sc7
-InstancePathPrefix=sc7
+SchemaPathPrefix=sc1
+InstancePathPrefix=sc1
 
 # Schema file Name
 FileNames.Schemas=metadata.xml
 
 # Number of Instances for each Basic Scenario Type
-Scenarios.COPY = 15
+Scenarios.COPY = 400
 
 ##################################################################################################################
 
 # Additional configuration
 
 # Number of attributes
-ConfigOptions.NumOfSubElements = 10
+ConfigOptions.NumOfSubElements = 7
 # Deviation of attributes for each relation
 ConfigOptionsDeviation.NumOfSubElements = 3
 
 RandomSeed = 3
-RepElementCount = 100
+RepElementCount = 200
 MaxStringLength = 100
 MaxNumValue = 1000
 DataGenerator = TrampCSV
@@ -34,16 +30,10 @@ QueryGenerator = Postgres
 MappingLanguage = FOtgds
 ExchangeTargetData = false
 
-ConfigOptions.SourceInclusionDependencyPerc = 50 
-ConfigOptions.SourceInclusionDependencyFKPerc = 50	
+ConfigOptions.SourceInclusionDependencyPerc = 50
+ConfigOptions.SourceInclusionDependencyFKPerc = 50
 ConfigOptions.TargetInclusionDependencyPerc = 50		
 ConfigOptions.TargetInclusionDependencyFKPerc = 50
-
-# Inverse of vertical partitioning, join multiple vertical fragments from the source to create a target relation
-Scenarios.MERGING = 5
-
-# Vertically partition a source relation
-Scenarios.VERTPARTITION = 10
 
 ################################################################################
 # Optional activation/deactivation of output options

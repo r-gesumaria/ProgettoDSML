@@ -1,20 +1,16 @@
 ################################################################################
 # iBench configuration file
-#
-# Example with user defined data types (UDTs), create 1 copy primitives and use
-# 4 user defined data types for its 30 attributes
-#
 ################################################################################
 
 # Output Path Prefixes
-SchemaPathPrefix=sc7
-InstancePathPrefix=sc7
+SchemaPathPrefix=sc3
+InstancePathPrefix=sc3
 
 # Schema file Name
 FileNames.Schemas=metadata.xml
 
 # Number of Instances for each Basic Scenario Type
-Scenarios.COPY = 20
+Scenarios.COPY = 490
 
 ##################################################################################################################
 
@@ -26,7 +22,7 @@ ConfigOptions.NumOfSubElements = 10
 ConfigOptionsDeviation.NumOfSubElements = 3
 
 RandomSeed = 3
-RepElementCount = 100
+RepElementCount = 140
 MaxStringLength = 100
 MaxNumValue = 1000
 DataGenerator = TrampCSV
@@ -35,12 +31,9 @@ MappingLanguage = FOtgds
 ExchangeTargetData = false
 
 ConfigOptions.SourceInclusionDependencyPerc = 50 
-ConfigOptions.SourceInclusionDependencyFKPerc = 50	
+ConfigOptions.SourceInclusionDependencyFKPerc = 50
 ConfigOptions.TargetInclusionDependencyPerc = 50		
 ConfigOptions.TargetInclusionDependencyFKPerc = 50
-
-# Vertically partition a source relation
-Scenarios.VERTPARTITION = 10
 
 ################################################################################
 # Optional activation/deactivation of output options
