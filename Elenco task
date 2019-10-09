@@ -1,0 +1,9 @@
+TASK 1
+Schema da utilizzare: SC7
+Descrizione: Nello schema source, nell'entità cheese_cp_1_nl0_ce0 hai l'attributo branch_cp_1_nl0_ae2 come attributo semplice. Nello schema target, medesima entità, abbiamo l'attributo compare_cp_1_nl0_ae1 derivabile dall'attributo branch_cp_1_nl0_ae2. 
+Task 1.1: Mantenere la configurazione con l'attributo semplice.
+Task 1.2: Mantenere la configurazione con l'attributo derivabile
+Informazioni preliminari: le entità coinvolte sono cheese_cp_1_nl0_ce0
+
+TASK 2
+Schema da utilizzare:
