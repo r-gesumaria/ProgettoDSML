@@ -21,7 +21,8 @@ Task 2.1: Mantenere la configurazione con l'attributo semplice
 Task 2.2: Mantenere la configurazione con l'attributo composto
 
 TASK 3
-Diciamo: ti trovi in una situazione in cui in uno schema hai un attributo semplice e nell'altro un attributo derivato. Quale operatore iconico utilizzeresti (da finire)
+Diciamo: ti trovi in una situazione in cui in uno schema hai un attributo semplice e nell'altro è rappresentato da due entità relazionate tra loro.
+Quale operatore iconico utilizzeresti per mantenere una delle due configurazioni?
 Schema da utilizzare: SC7
 Informazioni preliminari: le entità coinvolte sono red_vp_1_nl0_ce0, tail_vp_0_nl0_ce1 e warn_vp_0_nl0_ce0
 Descrizione: Nello schema source, nell'entità red_vp_1_nl0_ce0 hai l'attributo describe_vp_1_nl0_ae5 come attributo semplice.
@@ -34,6 +35,8 @@ Task 4:
 non troviamo le entità
 
 Task 5:
+Diciamo: ti trovi in una situazione in cui in uno schema hai un'unica entità e nell'altro è rappresentata da due entità relazionate tra loro.
+Quale operatore iconico utilizzeresti per mantenere una delle due configurazioni?
 Schema da utilizzare: SC9
 Informazioni preliminari: le entità coinvolte sono cheese_cp_1_nl0_ce0 e indicate_vp_0_nl0_ce1
 Descrizione: Nello schema target, l'entità cheese_cp_1_nl0_ce0 dello schema source, è descritta dalle due entità cheese_cp_1_nl0_ce0 e indicate_vp_0_nl0_ce1 relazionate da
