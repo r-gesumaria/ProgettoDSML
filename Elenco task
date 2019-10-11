@@ -1,9 +1,47 @@
 TASK 1
+Diciamo: ti trovi in una situazione in cui in uno schema hai un attributo semplice e nell'altro un attributo derivato. Quale operatore iconico utilizzeresti
+per mantenere una configurazione piuttosto che un'altra?
 Schema da utilizzare: SC7
-Descrizione: Nello schema source, nell'entità cheese_cp_1_nl0_ce0 hai l'attributo branch_cp_1_nl0_ae2 come attributo semplice. Nello schema target, medesima entità, abbiamo l'attributo compare_cp_1_nl0_ae1 derivabile dall'attributo branch_cp_1_nl0_ae2. 
+Informazioni preliminari: le entità coinvolte sono cheese_cp_1_nl0_ce0
+Descrizione: Nello schema source, nell'entità cheese_cp_1_nl0_ce0 hai l'attributo branch_cp_1_nl0_ae2 come attributo semplice. 
+Nello schema target, medesima entità, hai l'attributo compare_cp_1_nl0_ae1 derivabile dall'attributo branch_cp_1_nl0_ae2. 
 Task 1.1: Mantenere la configurazione con l'attributo semplice.
 Task 1.2: Mantenere la configurazione con l'attributo derivabile
-Informazioni preliminari: le entità coinvolte sono cheese_cp_1_nl0_ce0
+
+
 
 TASK 2
-Schema da utilizzare:
+Diciamo: ti trovi in una situazione in cui in uno schema hai un attributo semplice e nell'altro un attributo composto. Quale operatore iconico utilizzeresti
+Schema da utilizzare: SC7
+Informazioni preliminari: le entità coinvolte sono test_cp_0_nl0_ce0
+Descrizione: Nello schema source, nell'entità test_cp_0_nl0_ce0 hai l'attributo measure_cp_0_nl0_ae3 come attributo semplice.
+Nello schema target, medesima entità, hai gli attributi slope_cp_0_nl0_ae2, touch_cp_0_nl0_ae4 e measure_cp_0_nl0_ae3 che rappresentano parti dell'atributo 
+measure_cp_0_nl0_ae3 dello schema source.
+Task 2.1: Mantenere la configurazione con l'attributo semplice
+Task 2.2: Mantenere la configurazione con l'attributo composto
+
+TASK 3
+Diciamo: ti trovi in una situazione in cui in uno schema hai un attributo semplice e nell'altro è rappresentato da due entità relazionate tra loro.
+Quale operatore iconico utilizzeresti per mantenere una delle due configurazioni?
+Schema da utilizzare: SC7
+Informazioni preliminari: le entità coinvolte sono red_vp_1_nl0_ce0, tail_vp_0_nl0_ce1 e warn_vp_0_nl0_ce0
+Descrizione: Nello schema source, nell'entità red_vp_1_nl0_ce0 hai l'attributo describe_vp_1_nl0_ae5 come attributo semplice.
+Nello schema target invece, l'attributo describe_vp_1_nl0_ae5 suddetto è stato modellato sulle entità tail_vp_0_nl0_ce1 e warn_vp_0_nl0_ce0, relazionate attraverso 
+tail_vp_0_nl0_ce1/warn_vp_0_nl0_ce0.
+Task 3.1: Far si che anche nel target sia mantenuto l'attributo semplice 
+Task 3.2: Far si che anche nel source l'attributo semplice sia scomposto in due entità come accade nel target.
+
+Task 4:
+non troviamo le entità
+
+Task 5:
+Diciamo: ti trovi in una situazione in cui in uno schema hai un'unica entità e nell'altro è rappresentata da due entità relazionate tra loro.
+Quale operatore iconico utilizzeresti per mantenere una delle due configurazioni?
+Schema da utilizzare: SC9
+Informazioni preliminari: le entità coinvolte sono cheese_cp_1_nl0_ce0 e indicate_vp_0_nl0_ce1
+Descrizione: Nello schema target, l'entità cheese_cp_1_nl0_ce0 dello schema source, è descritta dalle due entità cheese_cp_1_nl0_ce0 e indicate_vp_0_nl0_ce1 relazionate da
+cheese_cp_1_nl0_ce0/indicate_vp_0_nl0_ce1
+Task 3.1: Far si che anche nel target sia mantenuto l'attributo semplice 
+Task 3.2: Far si che anche nel source l'attributo semplice sia scomposto in due entità come accade nel target.
+
+Ultimo partizionamento non possibile, nemmeno le gerarchie nemmeno chiusura transitiva.
